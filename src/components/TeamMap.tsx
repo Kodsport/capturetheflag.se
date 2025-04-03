@@ -25,8 +25,13 @@ const TeamMap = ({ teams }: TeamMapProps) => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/light-v11',
-      center: [17.0, 62.0], // Center on Sweden
-      zoom: 4.5,
+      center: [15.0, 62.0], // Centered on Sweden
+      zoom: 5, // Closer zoom focused on Sweden
+      minZoom: 4, // Limit how far users can zoom out
+      maxBounds: [ // Restrict panning to Sweden and nearby areas
+        [8.0, 54.5], // Southwest coordinates
+        [24.0, 69.5]  // Northeast coordinates
+      ]
     });
 
     // Add navigation controls
