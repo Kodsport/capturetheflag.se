@@ -61,11 +61,15 @@ const NewsDetail = () => {
         <Breadcrumb className="mb-6">
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink as={Link} to="/">Hem</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link to="/">Hem</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink as={Link} to="/">Nyheter</BreadcrumbLink>
+              <BreadcrumbLink asChild>
+                <Link to="/">Nyheter</Link>
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
