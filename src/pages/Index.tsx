@@ -5,6 +5,7 @@ import { newsData, NewsItem } from "@/data/news";
 import NewsCard from "@/components/NewsCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [featuredNews, setFeaturedNews] = useState<NewsItem[]>([]);
@@ -58,9 +59,11 @@ const Index = () => {
                 <p className="text-gray-600 mb-6">
                   {featuredNews[0].excerpt}
                 </p>
-                <Button className="bg-ctf-blue hover:bg-ctf-blue/80">
-                  Läs mer
-                </Button>
+                <Link to={`/news/${featuredNews[0].id}`}>
+                  <Button className="bg-ctf-blue hover:bg-ctf-blue/80">
+                    Läs mer
+                  </Button>
+                </Link>
               </div>
               
               <div className="rounded-lg overflow-hidden shadow-xl">

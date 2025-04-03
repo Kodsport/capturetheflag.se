@@ -3,13 +3,14 @@ import { NewsItem } from "@/data/news";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface NewsCardProps {
   news: NewsItem;
 }
 
 const NewsCard = ({ news }: NewsCardProps) => {
-  const { title, date, excerpt, category, image } = news;
+  const { id, title, date, excerpt, category, image } = news;
   
   const formattedDate = new Intl.DateTimeFormat("sv-SE", {
     year: "numeric",
@@ -37,9 +38,11 @@ const NewsCard = ({ news }: NewsCardProps) => {
         <CardDescription>{excerpt}</CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button variant="ghost" className="text-ctf-blue hover:text-ctf-teal w-full">
-          Läs mer
-        </Button>
+        <Link to={`/news/${id}`} className="w-full">
+          <Button variant="ghost" className="text-ctf-blue hover:text-ctf-teal w-full">
+            Läs mer
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );
