@@ -6,6 +6,7 @@ import NewsCard from "@/components/NewsCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { sponsorsData } from "@/data/sponsors";
 
 const Index = () => {
   const [featuredNews, setFeaturedNews] = useState<NewsItem[]>([]);
@@ -124,18 +125,25 @@ const Index = () => {
           </h2>
           
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
-              <span className="text-gray-400 font-medium text-lg">TechSec AB</span>
-            </div>
-            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
-              <span className="text-gray-400 font-medium text-lg">CyberDefend</span>
-            </div>
-            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
-              <span className="text-gray-400 font-medium text-lg">SecureIT</span>
-            </div>
-            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
-              <span className="text-gray-400 font-medium text-lg">Nordic Security</span>
-            </div>
+            {sponsorsData.map((sponsor) => (
+              <a 
+                key={sponsor.id} 
+                href={sponsor.website} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center hover:shadow-lg transition-shadow"
+              >
+                {sponsor.logo === "/placeholder.svg" ? (
+                  <span className="text-gray-400 font-medium text-lg">{sponsor.name}</span>
+                ) : (
+                  <img 
+                    src={sponsor.logo} 
+                    alt={sponsor.name} 
+                    className="max-w-full max-h-full object-contain" 
+                  />
+                )}
+              </a>
+            ))}
           </div>
           
           <div className="mt-10 text-center">
