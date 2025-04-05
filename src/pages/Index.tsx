@@ -7,10 +7,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { sponsorsData } from "@/data/sponsors";
+import { useTranslation } from "react-i18next";
 
 const Index = () => {
   const [featuredNews, setFeaturedNews] = useState<NewsItem[]>([]);
   const [recentNews, setRecentNews] = useState<NewsItem[]>([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Set featured news (first article)
@@ -29,17 +31,17 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Capture The Flag - Sverige
+              {t('homepage.hero.title')}
             </h1>
             <p className="text-xl mb-8">
-              Vi samlar CTF-Sverige!
+              {t('homepage.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-ctf-teal hover:bg-ctf-teal/80 text-white">
-                Bli medlem
+                {t('homepage.hero.join_button')}
               </Button>
               <Button variant="outline" className="text-black border-white hover:bg-white/80 hover:text-black/90">
-                Lär dig mer
+                {t('homepage.hero.learn_more')}
               </Button>
             </div>
           </div>
@@ -51,7 +53,7 @@ const Index = () => {
         <section className="py-16 bg-ctf-light">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center text-ctf-blue">
-              Senaste nytt
+              {t('homepage.news.title')}
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -64,7 +66,7 @@ const Index = () => {
                     {featuredNews[0].excerpt}
                   </p>
                   <Button className="bg-ctf-blue hover:bg-ctf-blue/80">
-                    Läs mer
+                    {t('common.read_more')}
                   </Button>
                 </div>
               </Link>
@@ -87,7 +89,7 @@ const Index = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-ctf-blue">
-            Nyheter och uppdateringar
+            {t('homepage.news.title')}
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -98,7 +100,7 @@ const Index = () => {
           
           <div className="mt-12 text-center">
             <Button variant="outline" className="border-ctf-blue text-ctf-blue hover:bg-ctf-blue hover:text-white">
-              Visa alla nyheter
+              {t('homepage.news.more_news')}
             </Button>
           </div>
         </div>
@@ -107,12 +109,12 @@ const Index = () => {
       {/* Call to Action Section */}
       <section className="py-16 bg-ctf-blue text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Gå med i CTF-Sverige idag</h2>
+          <h2 className="text-3xl font-bold mb-6">{t('homepage.cta.title')}</h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Bli en del av Sveriges ledande nätverk för CTF-entusiaster och cybersäkerhetsexperter.
+            {t('homepage.cta.description')}
           </p>
           <Button className="bg-white text-ctf-blue hover:bg-ctf-teal hover:text-white">
-            Ansök om medlemskap
+            {t('homepage.cta.button')}
           </Button>
         </div>
       </section>
@@ -121,7 +123,7 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center text-ctf-blue">
-            Våra partners
+            {t('homepage.sponsors.title')}
           </h2>
           
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
@@ -148,11 +150,11 @@ const Index = () => {
           
           <div className="mt-10 text-center">
             <p className="text-gray-600 mb-4">
-              Intresserad av att bli partner? Kontakta oss!
+              {t('homepage.sponsors.interested')}
             </p>
             <Link to="/contact">
               <Button variant="outline" className="border-ctf-blue text-ctf-blue hover:bg-ctf-blue hover:text-white">
-                Kontakta oss
+                {t('homepage.sponsors.contact_us')}
               </Button>
             </Link>
           </div>

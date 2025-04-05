@@ -15,10 +15,12 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const NewsDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [newsItem, setNewsItem] = useState<NewsItem | undefined>(undefined);
+  const { t, i18n } = useTranslation();
   
   useEffect(() => {
     if (id) {
@@ -36,7 +38,7 @@ const NewsDetail = () => {
           <Link to="/">
             <Button className="mt-4" variant="outline">
               <ChevronLeft className="mr-2 h-4 w-4" />
-              Tillbaka till startsidan
+              {t('common.home')}
             </Button>
           </Link>
         </div>
@@ -45,7 +47,7 @@ const NewsDetail = () => {
     );
   }
 
-  const formattedDate = new Intl.DateTimeFormat("sv-SE", {
+  const formattedDate = new Intl.DateTimeFormat(i18n.language === "en" ? "en-US" : "sv-SE", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -62,7 +64,7 @@ const NewsDetail = () => {
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link to="/">Hem</Link>
+                <Link to="/">{t('common.home')}</Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
@@ -105,7 +107,7 @@ const NewsDetail = () => {
           <Link to="/">
             <Button variant="outline" className="mt-8">
               <ChevronLeft className="mr-2 h-4 w-4" />
-              Tillbaka till alla nyheter
+              {t('homepage.news.more_news')}
             </Button>
           </Link>
         </article>

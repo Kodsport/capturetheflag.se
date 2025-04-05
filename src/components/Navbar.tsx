@@ -3,9 +3,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,22 +25,24 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="hover:text-ctf-teal transition-colors">Hem</Link>
-            <Link to="/what-is-ctf" className="hover:text-ctf-teal transition-colors">Vad är CTF?</Link>
-            <Link to="/teams" className="hover:text-ctf-teal transition-colors">Lag och tävingar</Link>
-            <Link to="/contact" className="hover:text-ctf-teal transition-colors">Kontakt</Link>
+            <Link to="/" className="hover:text-ctf-teal transition-colors">{t('common.home')}</Link>
+            <Link to="/what-is-ctf" className="hover:text-ctf-teal transition-colors">{t('common.whatIsCTF')}</Link>
+            <Link to="/teams" className="hover:text-ctf-teal transition-colors">{t('common.teams')}</Link>
+            <Link to="/contact" className="hover:text-ctf-teal transition-colors">{t('common.contact')}</Link>
             <Button variant="outline" className="border-ctf-teal text-ctf-teal hover:bg-ctf-teal hover:text-white">
-              Gå med i CTF-Kongress
+              {t('common.join')}
             </Button>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
+            <LanguageSwitcher />
             <Button 
               variant="ghost" 
               size="icon" 
               onClick={toggleMenu}
-              className="text-white"
+              className="text-white ml-2"
             >
               {isMenuOpen ? <X /> : <Menu />}
             </Button>
@@ -53,34 +58,34 @@ const Navbar = () => {
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Hem
+                {t('common.home')}
               </Link>
               <Link 
                 to="/teams" 
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Lag och tävlingar
+                {t('common.teams')}
               </Link>
               <Link 
                 to="/what-is-ctf" 
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Vad är CTF?
+                {t('common.whatIsCTF')}
               </Link>
               <Link 
                 to="/contact" 
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Kontakt
+                {t('common.contact')}
               </Link>
               <Button 
                 variant="outline" 
                 className="border-ctf-teal text-ctf-teal hover:bg-ctf-teal hover:text-white w-full"
               >
-                Gå med i CTF-Kongress
+                {t('common.join')}
               </Button>
             </div>
           </div>
