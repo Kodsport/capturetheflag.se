@@ -1,0 +1,70 @@
+
+{
+  "common": {
+    "home": "Home",
+    "whatIsCTF": "What is CTF?",
+    "teams": "Teams and Competitions",
+    "contact": "Contact",
+    "join": "Join CTF-Kongress",
+    "read_more": "Read more"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Capture The Flag - Sweden",
+      "subtitle": "We gather CTF-Sweden!",
+      "join_button": "Become a member",
+      "learn_more": "Learn more"
+    },
+    "news": {
+      "title": "Latest news",
+      "more_news": "View all news"
+    },
+    "cta": {
+      "title": "Join CTF-Sweden today",
+      "description": "Become part of Sweden's leading network for CTF enthusiasts and cybersecurity experts.",
+      "button": "Apply for membership"
+    },
+    "sponsors": {
+      "title": "Our partners",
+      "interested": "Interested in becoming a partner? Contact us!",
+      "contact_us": "Contact us"
+    }
+  },
+  "teams": {
+    "title": "CTF teams and competitions in Sweden",
+    "subtitle": "Discover active Capture the Flag teams and competitions around the country",
+    "search": "Search for team, city or country...",
+    "team": {
+      "members": "members",
+      "achievements": "Achievements",
+      "visit_website": "Visit website"
+    },
+    "no_teams": "No teams found with the search term",
+    "clear_search": "Clear search",
+    "missing_team": {
+      "title": "Is your team missing?",
+      "description": "Are you in a team that's not on the list? Contact us to add your team!",
+      "button": "Register your team"
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Do you have questions or want to know more about CTF-Kongress? We're happy to help!",
+    "about": {
+      "title": "About us",
+      "description": "CTF-Kongress is a network that brings together Capture The Flag teams and competition organizers throughout Sweden. We meet in the forum on Discord and at the annual CTF-Kongress event.",
+      "vision_title": "Vision",
+      "vision": "Our goal is to build a strong CTF scene in Sweden by sharing knowledge and promoting the competition format."
+    },
+    "contact_info": {
+      "title": "Contact information",
+      "email": "Email",
+      "discord": "Discord Server"
+    }
+  },
+  "footer": {
+    "links": "Links",
+    "contact": "Contact",
+    "copyright": "© {{year}} Kodsport Sverige. All rights reserved."
+  }
+}

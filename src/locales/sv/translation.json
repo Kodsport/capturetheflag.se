@@ -1,0 +1,70 @@
+
+{
+  "common": {
+    "home": "Hem",
+    "whatIsCTF": "Vad är CTF?",
+    "teams": "Lag och tävingar",
+    "contact": "Kontakt",
+    "join": "Gå med i CTF-Kongress",
+    "read_more": "Läs mer"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Capture The Flag - Sverige",
+      "subtitle": "Vi samlar CTF-Sverige!",
+      "join_button": "Bli medlem",
+      "learn_more": "Lär dig mer"
+    },
+    "news": {
+      "title": "Senaste nytt",
+      "more_news": "Visa alla nyheter"
+    },
+    "cta": {
+      "title": "Gå med i CTF-Sverige idag",
+      "description": "Bli en del av Sveriges ledande nätverk för CTF-entusiaster och cybersäkerhetsexperter.",
+      "button": "Ansök om medlemskap"
+    },
+    "sponsors": {
+      "title": "Våra partners",
+      "interested": "Intresserad av att bli partner? Kontakta oss!",
+      "contact_us": "Kontakta oss"
+    }
+  },
+  "teams": {
+    "title": "CTF-lag och -tävlingar i Sverige",
+    "subtitle": "Upptäck aktiva Capture the Flag-lag och -tävlingar runtom i landet och se var de finns",
+    "search": "Sök efter team, stad eller land...",
+    "team": {
+      "members": "medlemmar",
+      "achievements": "Prestationer",
+      "visit_website": "Besök webbplats"
+    },
+    "no_teams": "Inga team hittades med söktermen",
+    "clear_search": "Rensa sökning",
+    "missing_team": {
+      "title": "Saknas ditt team?",
+      "description": "Är du med i ett lag som inte finns med på listan? Kontakta oss för att lägga till er!",
+      "button": "Registrera ditt team"
+    }
+  },
+  "contact": {
+    "title": "Kontakta oss",
+    "subtitle": "Har du frågor eller vill veta mer om CTF-Kongress? Vi hjälper dig gärna!",
+    "about": {
+      "title": "Om oss",
+      "description": "CTF-Kongress är ett nätverk som samlar Capture The Flag-lag och tävlingsorganisatörer i hela Sverige. Vi möts i forumet på Discord och vid årliga eventet CTF-Kongress.",
+      "vision_title": "Vision",
+      "vision": "Vårt mål är att bygga en stark CTF-scen i Sverige genom att dela kunskap och främja tävingsformen."
+    },
+    "contact_info": {
+      "title": "Kontaktinformation",
+      "email": "Email",
+      "discord": "Discord Server"
+    }
+  },
+  "footer": {
+    "links": "Länkar",
+    "contact": "Kontakt",
+    "copyright": "© {{year}} Kodsport Sverige. Alla rättigheter förbehållna."
+  }
+}
