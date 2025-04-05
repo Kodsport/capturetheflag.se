@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-ctf-teal">CTF</span>-Kongress Sverige
+              <span className="text-ctf-teal">CTF</span>-Sverige
             </h3>
             <p className="text-gray-300">
               Främjar svenska CTF-tävlingar och utbildning inom cybersäkerhet.
@@ -26,8 +26,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/members" className="text-gray-300 hover:text-ctf-teal transition-colors">
-                  Medlemmar
+                <Link to="/teams" className="text-gray-300 hover:text-ctf-teal transition-colors">
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link to="/what-is-ctf" className="text-gray-300 hover:text-ctf-teal transition-colors">
+                  Vad är CTF?
                 </Link>
               </li>
               <li>
@@ -41,7 +46,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Email: info@ctf-kongress.se</li>
+              <li>Email: info@ctf-sverige.se</li>
               <li>Telefon: 08-123 45 67</li>
               <li>Stockholm, Sverige</li>
             </ul>
@@ -49,7 +54,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>© {currentYear} CTF-Kongress Sverige. Alla rättigheter förbehållna.</p>
+          <p>© {currentYear} CTF-Sverige. Alla rättigheter förbehållna.</p>
         </div>
       </div>
     </footer>

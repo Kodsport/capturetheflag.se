@@ -28,7 +28,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              CTF-Kongress Sverige
+              Capture The Flag - Sverige
             </h1>
             <p className="text-xl mb-8">
               Främjar Capture The Flag-tävlingar och cybersäkerhetsutbildning i Sverige
@@ -102,13 +102,48 @@ const Index = () => {
       {/* Call to Action Section */}
       <section className="py-16 bg-ctf-blue text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Gå med i CTF-Kongress Sverige idag</h2>
+          <h2 className="text-3xl font-bold mb-6">Gå med i CTF-Sverige idag</h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
             Bli en del av Sveriges ledande nätverk för CTF-entusiaster och cybersäkerhetsexperter.
           </p>
           <Button className="bg-white text-ctf-blue hover:bg-ctf-teal hover:text-white">
             Ansök om medlemskap
           </Button>
+        </div>
+      </section>
+      
+      {/* Sponsors Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center text-ctf-blue">
+            Våra sponsorer
+          </h2>
+          
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
+              <span className="text-gray-400 font-medium text-lg">TechSec AB</span>
+            </div>
+            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
+              <span className="text-gray-400 font-medium text-lg">CyberDefend</span>
+            </div>
+            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
+              <span className="text-gray-400 font-medium text-lg">SecureIT</span>
+            </div>
+            <div className="bg-white p-6 shadow rounded-lg w-[200px] h-[100px] flex items-center justify-center">
+              <span className="text-gray-400 font-medium text-lg">Nordic Security</span>
+            </div>
+          </div>
+          
+          <div className="mt-10 text-center">
+            <p className="text-gray-600 mb-4">
+              Intresserad av att bli sponsor? Kontakta oss för mer information.
+            </p>
+            <Link to="/contact">
+              <Button variant="outline" className="border-ctf-blue text-ctf-blue hover:bg-ctf-blue hover:text-white">
+                Kontakta oss
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
       

@@ -5,11 +5,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import Members from "./pages/Members";
 import Teams from "./pages/Teams";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import NewsDetail from "./pages/NewsDetail";
+import WhatIsCTF from "./pages/WhatIsCTF";
 
 const queryClient = new QueryClient();
 
@@ -21,8 +21,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/members" element={<Members />} />
           <Route path="/teams" element={<Teams />} />
+          <Route path="/what-is-ctf" element={<WhatIsCTF />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news/:id" element={<NewsDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

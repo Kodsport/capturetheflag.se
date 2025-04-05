@@ -17,13 +17,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-2xl font-bold flex items-center space-x-2">
             <span className="text-ctf-teal">CTF</span>
-            <span>-Kongress Sverige</span>
+            <span>-Sverige</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className="hover:text-ctf-teal transition-colors">Hem</Link>
-            <Link to="/members" className="hover:text-ctf-teal transition-colors">Medlemmar</Link>
+            <Link to="/teams" className="hover:text-ctf-teal transition-colors">Team</Link>
+            <Link to="/what-is-ctf" className="hover:text-ctf-teal transition-colors">Vad är CTF?</Link>
             <Link to="/contact" className="hover:text-ctf-teal transition-colors">Kontakt</Link>
             <Button variant="outline" className="border-ctf-teal text-ctf-teal hover:bg-ctf-teal hover:text-white">
               Bli medlem
@@ -55,11 +56,18 @@ const Navbar = () => {
                 Hem
               </Link>
               <Link 
-                to="/members" 
+                to="/teams" 
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Medlemmar
+                Team
+              </Link>
+              <Link 
+                to="/what-is-ctf" 
+                className="hover:text-ctf-teal transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Vad är CTF?
               </Link>
               <Link 
                 to="/contact" 
