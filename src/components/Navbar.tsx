@@ -15,19 +15,19 @@ const Navbar = () => {
     <nav className="bg-ctf-blue text-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-2xl font-bold flex items-center">
-            <span className="text-ctf-teal">CTF</span>
-            <span>Sverige</span>
+          <Link to="/" className="text-0 font-bold flex items-center">
+            <span className="text-ctf-teal text-2xl">CTF</span>
+            <span className="text-2xl">-Sverige</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className="hover:text-ctf-teal transition-colors">Hem</Link>
-            <Link to="/teams" className="hover:text-ctf-teal transition-colors">Team</Link>
             <Link to="/what-is-ctf" className="hover:text-ctf-teal transition-colors">Vad är CTF?</Link>
+            <Link to="/teams" className="hover:text-ctf-teal transition-colors">Lag och tävingar</Link>
             <Link to="/contact" className="hover:text-ctf-teal transition-colors">Kontakt</Link>
             <Button variant="outline" className="border-ctf-teal text-ctf-teal hover:bg-ctf-teal hover:text-white">
-              Bli medlem
+              Gå med i CTF-Kongress
             </Button>
           </div>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Team
+                Lag och tävlingar
               </Link>
               <Link 
                 to="/what-is-ctf" 
@@ -80,7 +80,7 @@ const Navbar = () => {
                 variant="outline" 
                 className="border-ctf-teal text-ctf-teal hover:bg-ctf-teal hover:text-white w-full"
               >
-                Bli medlem
+                Gå med i CTF-Kongress
               </Button>
             </div>
           </div>

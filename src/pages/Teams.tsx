@@ -43,9 +43,9 @@ const Teams = () => {
       {/* Header */}
       <section className="bg-ctf-blue text-white py-12">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">CTF-team i Sverige</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">CTF-lag och -tävlingar i Sverige</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Upptäck aktiva Capture The Flag-team runtom i landet och se var de finns
+            Upptäck aktiva Capture the Flag-lag och -tävlingar runtom i landet och se var de finns
           </p>
         </div>
       </section>
@@ -86,7 +86,7 @@ const Teams = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">{team.description || "Ett aktivt CTF-team i Sverige."}</p>
+                  <p className="text-gray-600 mb-4">{team.description || "Ett aktivt CTF-lag i Sverige."}</p>
                   
                   <div className="flex items-center gap-2 mb-4">
                     <Badge className="bg-ctf-blue">{team.members} medlemmar</Badge>
@@ -141,7 +141,7 @@ const Teams = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-ctf-blue">Saknas ditt team?</h2>
           <p className="text-lg max-w-2xl mx-auto mb-8">
-            Är du med i ett CTF-team som inte finns med på listan? Kontakta oss för att lägga till ditt team i vår databas.
+            Är du med i ett lag som inte finns med på listan? Kontakta oss för att lägga till er!
           </p>
           <Button className="bg-ctf-blue hover:bg-ctf-blue/80">
             Registrera ditt team

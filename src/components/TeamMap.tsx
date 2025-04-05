@@ -15,7 +15,7 @@ interface TeamMapProps {
 const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
-  const [mapboxToken, setMapboxToken] = useState<string>('');
+  const [mapboxToken, setMapboxToken] = useState<string>('pk.eyJ1IjoidmluZ3IiLCJhIjoiY205NDh1eXg2MHB4bjJrczVhcmFqNWFzNCJ9.vp1jVLNUV-kVmeHbKzTEug');
   const [activeTeam, setActiveTeam] = useState<TeamItem | null>(null);
   const [activeCompetition, setActiveCompetition] = useState<CompetitionItem | null>(null);
   const [activeTab, setActiveTab] = useState<string>('teams');
@@ -30,8 +30,8 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/light-v11',
-      center: [17.0, 62.0], // Center on Sweden
-      zoom: 4.5,
+      center: [17.0, 56.0], // Center on Sweden
+      zoom: 3.5,
     });
 
     // Add navigation controls
@@ -217,7 +217,7 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
           <div className="absolute top-4 left-4 z-10">
             <Tabs defaultValue="teams" className="w-[300px] bg-white/90 backdrop-blur-sm rounded-md shadow-md">
               <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="teams" onClick={() => handleTabChange('teams')}>Teams</TabsTrigger>
+                <TabsTrigger value="teams" onClick={() => handleTabChange('teams')}>Lag</TabsTrigger>
                 <TabsTrigger value="competitions" onClick={() => handleTabChange('competitions')}>Tävlingar</TabsTrigger>
                 <TabsTrigger value="all" onClick={() => handleTabChange('all')}>Alla</TabsTrigger>
               </TabsList>

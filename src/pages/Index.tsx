@@ -32,14 +32,14 @@ const Index = () => {
               Capture The Flag - Sverige
             </h1>
             <p className="text-xl mb-8">
-              Främjar Capture The Flag-tävlingar och cybersäkerhetsutbildning i Sverige
+              Vi samlar CTF-Sverige!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-ctf-teal hover:bg-ctf-teal/80 text-white">
                 Bli medlem
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-white/10 hover:text-white">
-                Läs mer om oss
+              <Button variant="outline" className="text-black border-white hover:bg-white/80 hover:text-black/90">
+                Lär dig mer
               </Button>
             </div>
           </div>
@@ -121,7 +121,7 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center text-ctf-blue">
-            Våra sponsorer
+            Våra partners
           </h2>
           
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
@@ -148,7 +148,7 @@ const Index = () => {
           
           <div className="mt-10 text-center">
             <p className="text-gray-600 mb-4">
-              Intresserad av att bli sponsor? Kontakta oss för mer information.
+              Intresserad av att bli partner? Kontakta oss!
             </p>
             <Link to="/contact">
               <Button variant="outline" className="border-ctf-blue text-ctf-blue hover:bg-ctf-blue hover:text-white">

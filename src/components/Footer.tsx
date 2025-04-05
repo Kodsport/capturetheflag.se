@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-ctf-teal">CTF</span>Sverige
+              <span className="text-ctf-teal">CTF</span>-Sverige
             </h3>
             <p className="text-gray-300">
-              Främjar svenska CTF-tävlingar och utbildning inom cybersäkerhet.
+              CTF-Kongress är ett nätverk som främjar svenska CTF-scenen.
             </p>
           </div>
           
@@ -28,7 +28,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/teams" className="text-gray-300 hover:text-ctf-teal transition-colors">
-                  Team
+                  Lag och tävingar
                 </Link>
               </li>
               <li>
@@ -48,7 +48,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
             <ul className="space-y-2 text-gray-300">
               <li>Email: <a href={`mailto:${contactInfo.email}`} className="hover:text-ctf-teal transition-colors">{contactInfo.email}</a></li>
-              <li>{contactInfo.address.city}, {contactInfo.address.country}</li>
             </ul>
           </div>
         </div>
