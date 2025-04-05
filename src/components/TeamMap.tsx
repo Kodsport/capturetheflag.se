@@ -3,18 +3,23 @@ import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { TeamItem } from '@/data/teams';
+import { CompetitionItem } from '@/data/competitions';
 import { Card, CardContent } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface TeamMapProps {
   teams: TeamItem[];
+  competitions?: CompetitionItem[];
 }
 
-const TeamMap = ({ teams }: TeamMapProps) => {
+const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const [mapboxToken, setMapboxToken] = useState<string>('');
   const [activeTeam, setActiveTeam] = useState<TeamItem | null>(null);
-  const markersRef = useRef<{ [id: number]: mapboxgl.Marker }>({});
+  const [activeCompetition, setActiveCompetition] = useState<CompetitionItem | null>(null);
+  const [activeTab, setActiveTab] = useState<string>('teams');
+  const markersRef = useRef<{ [id: string]: mapboxgl.Marker }>({});
 
   useEffect(() => {
     if (!mapContainer.current || !mapboxToken || map.current) return;
@@ -53,7 +58,7 @@ const TeamMap = ({ teams }: TeamMapProps) => {
     Object.values(markersRef.current).forEach(marker => marker.remove());
     markersRef.current = {};
 
-    // Add new markers
+    // Add team markers
     teams.forEach(team => {
       if (!map.current) return;
 
@@ -76,6 +81,7 @@ const TeamMap = ({ teams }: TeamMapProps) => {
       // Set up click event
       el.addEventListener('click', () => {
         setActiveTeam(team);
+        setActiveCompetition(null);
         
         if (map.current) {
           map.current.flyTo({
@@ -87,16 +93,75 @@ const TeamMap = ({ teams }: TeamMapProps) => {
       });
 
       // Store marker reference
-      markersRef.current[team.id] = marker;
+      markersRef.current[`team-${team.id}`] = marker;
+    });
+
+    // Add competition markers
+    competitions.forEach(competition => {
+      if (!map.current) return;
+
+      // Create custom marker element
+      const el = document.createElement('div');
+      el.className = 'competition-marker';
+      el.style.backgroundColor = '#ea384c'; // Red color for competitions
+      el.style.width = '20px';
+      el.style.height = '20px';
+      el.style.borderRadius = '50%';
+      el.style.border = '2px solid white';
+      el.style.cursor = 'pointer';
+      el.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+
+      // Create and add marker
+      const marker = new mapboxgl.Marker(el)
+        .setLngLat([competition.location.lng, competition.location.lat])
+        .addTo(map.current);
+
+      // Set up click event
+      el.addEventListener('click', () => {
+        setActiveCompetition(competition);
+        setActiveTeam(null);
+        
+        if (map.current) {
+          map.current.flyTo({
+            center: [competition.location.lng, competition.location.lat],
+            zoom: 10,
+            duration: 1500
+          });
+        }
+      });
+
+      // Store marker reference
+      markersRef.current[`competition-${competition.id}`] = marker;
     });
   };
 
-  // Update markers if teams change
+  // Handle tab change to show/hide markers
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab);
+    setActiveTeam(null);
+    setActiveCompetition(null);
+    
+    // Show/hide markers based on active tab
+    if (map.current) {
+      Object.entries(markersRef.current).forEach(([id, marker]) => {
+        if (tab === 'all' || 
+            (tab === 'teams' && id.startsWith('team')) || 
+            (tab === 'competitions' && id.startsWith('competition'))) {
+          marker.getElement().style.display = 'block';
+        } else {
+          marker.getElement().style.display = 'none';
+        }
+      });
+    }
+  };
+
+  // Update markers if teams or competitions change
   useEffect(() => {
     if (map.current && mapboxToken) {
       addMarkers();
+      handleTabChange(activeTab);
     }
-  }, [teams, mapboxToken]);
+  }, [teams, competitions, mapboxToken]);
 
   // Handle token input
   const handleTokenSubmit = (e: React.FormEvent) => {
@@ -149,6 +214,16 @@ const TeamMap = ({ teams }: TeamMapProps) => {
         </Card>
       ) : (
         <div className="relative">
+          <div className="absolute top-4 left-4 z-10">
+            <Tabs defaultValue="teams" className="w-[300px] bg-white/90 backdrop-blur-sm rounded-md shadow-md">
+              <TabsList className="grid w-full grid-cols-3">
+                <TabsTrigger value="teams" onClick={() => handleTabChange('teams')}>Teams</TabsTrigger>
+                <TabsTrigger value="competitions" onClick={() => handleTabChange('competitions')}>Tävlingar</TabsTrigger>
+                <TabsTrigger value="all" onClick={() => handleTabChange('all')}>Alla</TabsTrigger>
+              </TabsList>
+            </Tabs>
+          </div>
+          
           <div 
             ref={mapContainer} 
             className="w-full h-[70vh] rounded-lg shadow-md"
@@ -192,6 +267,38 @@ const TeamMap = ({ teams }: TeamMapProps) => {
                   </div>
                 )}
               </div>
+            </div>
+          )}
+
+          {activeCompetition && (
+            <div className="absolute left-4 bottom-4 w-80 bg-white p-4 rounded-lg shadow-lg z-10">
+              <div className="flex justify-between items-start">
+                <h3 className="text-lg font-bold text-red-600">{activeCompetition.name}</h3>
+                <button 
+                  onClick={() => setActiveCompetition(null)}
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  ✕
+                </button>
+              </div>
+              <p className="text-sm text-gray-600 mt-1">{activeCompetition.city}, {activeCompetition.country}</p>
+              <p className="text-sm mt-1">Datum: {new Date(activeCompetition.date).toLocaleDateString('sv-SE')}</p>
+              {activeCompetition.format && (
+                <p className="text-sm mt-1">Format: {activeCompetition.format}</p>
+              )}
+              <p className="text-sm mt-2">{activeCompetition.description}</p>
+              {activeCompetition.website && (
+                <div className="mt-3">
+                  <a 
+                    href={activeCompetition.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-ctf-teal hover:underline"
+                  >
+                    Visit website
+                  </a>
+                </div>
+              )}
             </div>
           )}
         </div>

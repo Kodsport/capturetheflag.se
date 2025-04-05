@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { contactInfo } from "@/data/contact";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-ctf-teal">CTF</span>-Sverige
+              <span className="text-ctf-teal">CTF</span>Sverige
             </h3>
             <p className="text-gray-300">
               Främjar svenska CTF-tävlingar och utbildning inom cybersäkerhet.
@@ -46,15 +47,31 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Email: info@ctf-sverige.se</li>
-              <li>Telefon: 08-123 45 67</li>
-              <li>Stockholm, Sverige</li>
+              <li>Email: <a href={`mailto:${contactInfo.email}`} className="hover:text-ctf-teal transition-colors">{contactInfo.email}</a></li>
+              <li>{contactInfo.address.city}, {contactInfo.address.country}</li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>© {currentYear} CTF-Sverige. Alla rättigheter förbehållna.</p>
+        <div className="mt-8 pt-4 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-xs text-gray-500">© {currentYear} Kodsport Sverige. Alla rättigheter förbehållna.</p>
+          <div className="mt-2 md:mt-0 flex space-x-4">
+            {contactInfo.social?.github && (
+              <a href={contactInfo.social.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-ctf-teal">
+                GitHub
+              </a>
+            )}
+            {contactInfo.social?.twitter && (
+              <a href={contactInfo.social.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-ctf-teal">
+                Twitter
+              </a>
+            )}
+            {contactInfo.social?.linkedin && (
+              <a href={contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-ctf-teal">
+                LinkedIn
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </footer>

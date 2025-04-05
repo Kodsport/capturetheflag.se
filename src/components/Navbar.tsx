@@ -15,9 +15,9 @@ const Navbar = () => {
     <nav className="bg-ctf-blue text-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-2xl font-bold flex items-center space-x-2">
+          <Link to="/" className="text-2xl font-bold flex items-center">
             <span className="text-ctf-teal">CTF</span>
-            <span>-Sverige</span>
+            <span>Sverige</span>
           </Link>
 
           {/* Desktop Navigation */}

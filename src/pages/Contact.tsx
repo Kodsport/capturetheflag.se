@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/components/ui/use-toast";
+import { contactInfo } from "@/data/contact";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -87,15 +88,17 @@ const Contact = () => {
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start">
                         <span className="font-medium w-24">Email:</span>
-                        <span>info@ctf-kongress.se</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="font-medium w-24">Telefon:</span>
-                        <span>08-123 45 67</span>
+                        <a href={`mailto:${contactInfo.email}`} className="text-ctf-teal hover:underline">
+                          {contactInfo.email}
+                        </a>
                       </li>
                       <li className="flex items-start">
                         <span className="font-medium w-24">Adress:</span>
-                        <span>Cybersäkerhetsgatan 42<br />112 33 Stockholm<br />Sverige</span>
+                        <span>
+                          {contactInfo.address.street}<br />
+                          {contactInfo.address.postal} {contactInfo.address.city}<br />
+                          {contactInfo.address.country}
+                        </span>
                       </li>
                     </ul>
                   </CardContent>

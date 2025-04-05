@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import TeamMap from "@/components/TeamMap";
 import { teamsData } from '@/data/teams';
+import { competitionsData } from '@/data/competitions';
 import { ExternalLink } from 'lucide-react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -19,6 +20,13 @@ const Teams = () => {
     queryKey: ['teams'],
     queryFn: () => Promise.resolve(teamsData),
     initialData: teamsData,
+  });
+
+  // Simulate fetching competitions data
+  const { data: competitions } = useQuery({
+    queryKey: ['competitions'],
+    queryFn: () => Promise.resolve(competitionsData),
+    initialData: competitionsData,
   });
 
   // Filter teams based on search
@@ -46,7 +54,7 @@ const Teams = () => {
       <section className="py-8">
         <div className="container mx-auto px-4 mb-8">
           <div className="h-[500px] rounded-lg overflow-hidden shadow-md border border-gray-200">
-            <TeamMap teams={teams} />
+            <TeamMap teams={teams} competitions={competitions} />
           </div>
         </div>
       </section>
