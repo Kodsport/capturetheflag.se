@@ -37,7 +37,7 @@ const Index = () => {
               <Button className="bg-ctf-teal hover:bg-ctf-teal/80 text-white">
                 Bli medlem
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button variant="outline" className="text-white border-white hover:bg-white/10 hover:text-white">
                 Läs mer om oss
               </Button>
             </div>
@@ -54,24 +54,28 @@ const Index = () => {
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">{featuredNews[0].title}</h3>
-                <p className="text-gray-600 mb-6">
-                  {featuredNews[0].excerpt}
-                </p>
-                <Link to={`/news/${featuredNews[0].id}`}>
+              <Link to={`/news/${featuredNews[0].id}`} className="group">
+                <div className="hover:shadow-lg rounded-lg transition-shadow p-2">
+                  <h3 className="text-2xl font-bold mb-4 group-hover:text-ctf-blue transition-colors">
+                    {featuredNews[0].title}
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    {featuredNews[0].excerpt}
+                  </p>
                   <Button className="bg-ctf-blue hover:bg-ctf-blue/80">
                     Läs mer
                   </Button>
-                </Link>
-              </div>
+                </div>
+              </Link>
               
               <div className="rounded-lg overflow-hidden shadow-xl">
-                <img 
-                  src={featuredNews[0].image} 
-                  alt={featuredNews[0].title}
-                  className="w-full h-[300px] object-cover" 
-                />
+                <Link to={`/news/${featuredNews[0].id}`}>
+                  <img 
+                    src={featuredNews[0].image} 
+                    alt={featuredNews[0].title}
+                    className="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-300" 
+                  />
+                </Link>
               </div>
             </div>
           </div>

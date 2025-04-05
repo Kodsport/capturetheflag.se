@@ -2,7 +2,6 @@
 import React from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Flag, Globe, Lock, Shield, Terminal } from "lucide-react";
 
@@ -156,74 +155,65 @@ const WhatIsCTF = () => {
             CTF-format
           </h2>
           
-          <Tabs defaultValue="jeopardy" className="max-w-4xl mx-auto">
-            <TabsList className="grid w-full md:w-[400px] grid-cols-2 mx-auto mb-8">
-              <TabsTrigger value="jeopardy">Jeopardy</TabsTrigger>
-              <TabsTrigger value="attack-defense">Attack-Defense</TabsTrigger>
-            </TabsList>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <Card>
+              <CardHeader>
+                <CardTitle>Jeopardy-stil</CardTitle>
+                <CardDescription>
+                  Det vanligaste formatet för CTF-tävlingar
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p>
+                  I en Jeopardy-stil CTF presenteras deltagarna med en uppsättning utmaningar kategoriserade efter 
+                  typer (Web, Crypto, Forensics, osv.) och svårighetsgrad. Varje utmaning är värd ett visst antal 
+                  poäng baserat på svårighetsgrad.
+                </p>
+                <p>
+                  När en utmaning löses och flaggan skickas in, får laget poäng. Det lag som samlar flest poäng i 
+                  slutet av tävlingen vinner.
+                </p>
+                <div className="bg-ctf-light p-4 rounded-lg">
+                  <h4 className="font-medium mb-2">Fördelar med Jeopardy-format:</h4>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Passar både nybörjare och erfarna deltagare</li>
+                    <li>Lättare att organisera och köra</li>
+                    <li>Deltagare kan fokusera på kategorier de är starka inom</li>
+                    <li>Kan spelas både på plats och online</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
             
-            <TabsContent value="jeopardy">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Jeopardy-stil</CardTitle>
-                  <CardDescription>
-                    Det vanligaste formatet för CTF-tävlingar
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p>
-                    I en Jeopardy-stil CTF presenteras deltagarna med en uppsättning utmaningar kategoriserade efter 
-                    typer (Web, Crypto, Forensics, osv.) och svårighetsgrad. Varje utmaning är värd ett visst antal 
-                    poäng baserat på svårighetsgrad.
-                  </p>
-                  <p>
-                    När en utmaning löses och flaggan skickas in, får laget poäng. Det lag som samlar flest poäng i 
-                    slutet av tävlingen vinner.
-                  </p>
-                  <div className="bg-ctf-light p-4 rounded-lg">
-                    <h4 className="font-medium mb-2">Fördelar med Jeopardy-format:</h4>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Passar både nybörjare och erfarna deltagare</li>
-                      <li>Lättare att organisera och köra</li>
-                      <li>Deltagare kan fokusera på kategorier de är starka inom</li>
-                      <li>Kan spelas både på plats och online</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            
-            <TabsContent value="attack-defense">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Attack-Defense</CardTitle>
-                  <CardDescription>
-                    Ett mer avancerat och interaktivt CTF-format
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p>
-                    I Attack-Defense-format får varje lag ett identiskt nätverk eller system med sårbara tjänster. 
-                    Lagen måste både försvara sina egna system mot attacker från andra lag samtidigt som de försöker 
-                    attackera andras system för att hitta flaggor.
-                  </p>
-                  <p>
-                    Poäng tjänas både genom att hålla sina tjänster igång (försvarspoäng) och genom att kompromettera 
-                    andra lags tjänster (attackpoäng).
-                  </p>
-                  <div className="bg-ctf-light p-4 rounded-lg">
-                    <h4 className="font-medium mb-2">Fördelar med Attack-Defense-format:</h4>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Mer realistiska scenarier som efterliknar verkliga situationer</li>
-                      <li>Utvecklar både offensiva och defensiva färdigheter</li>
-                      <li>Mer dynamiskt och intensivt spel</li>
-                      <li>Främjar teamarbete och strategi</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+            <Card>
+              <CardHeader>
+                <CardTitle>Attack-Defense</CardTitle>
+                <CardDescription>
+                  Ett mer avancerat och interaktivt CTF-format
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p>
+                  I Attack-Defense-format får varje lag ett identiskt nätverk eller system med sårbara tjänster. 
+                  Lagen måste både försvara sina egna system mot attacker från andra lag samtidigt som de försöker 
+                  attackera andras system för att hitta flaggor.
+                </p>
+                <p>
+                  Poäng tjänas både genom att hålla sina tjänster igång (försvarspoäng) och genom att kompromettera 
+                  andra lags tjänster (attackpoäng).
+                </p>
+                <div className="bg-ctf-light p-4 rounded-lg">
+                  <h4 className="font-medium mb-2">Fördelar med Attack-Defense-format:</h4>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Mer realistiska scenarier som efterliknar verkliga situationer</li>
+                    <li>Utvecklar både offensiva och defensiva färdigheter</li>
+                    <li>Mer dynamiskt och intensivt spel</li>
+                    <li>Främjar teamarbete och strategi</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
       

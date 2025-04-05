@@ -96,7 +96,7 @@ const Teams = () => {
                   )}
                 </CardContent>
                 <CardFooter className="flex justify-between border-t pt-4">
-                  {team.website ? (
+                  {team.website && (
                     <a 
                       href={team.website} 
                       target="_blank" 
@@ -105,8 +105,6 @@ const Teams = () => {
                     >
                       Besök webbplats <ExternalLink className="h-4 w-4" />
                     </a>
-                  ) : (
-                    <span className="text-gray-400 text-sm">Ingen webbplats tillgänglig</span>
                   )}
                 </CardFooter>
               </Card>
