@@ -33,6 +33,12 @@
       "contact_us": "Contact us"
     }
   },
+  "whatIsCTF": {
+    "coming_soon": {
+      "title": "Content Coming Soon",
+      "description": "We're working on creating comprehensive guides about Capture The Flag competitions. Check back soon!"
+    }
+  },
   "allnews": {
     "title": "All News"
   },

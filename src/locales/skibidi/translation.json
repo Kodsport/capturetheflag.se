@@ -1,3 +1,4 @@
+
 {
   "common": {
     "home": "Hemma 🏠 ZAMN! 💥",
@@ -7,6 +8,12 @@
     "contact": "SLIDE IN OUR DMS 📞💬",
     "join": "YEET INTO CTF-KONGRESS 🚀💣",
     "read_more": "GIMME THE TEA ✨🍵"
+  },
+  "whatIsCTF": {
+    "coming_soon": {
+      "title": "DROPPING NEW CONTENT SOON FRFR 🔥🔥",
+      "description": "WE COOKING UP THAT NEXT LEVEL CTF GUIDE BUSSIN NO CAP!! 👨‍💻💯"
+    }
   },
   "homepage": {
     "hero": {

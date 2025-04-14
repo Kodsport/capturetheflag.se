@@ -33,6 +33,12 @@
       "contact_us": "Kontakta oss"
     }
   },
+  "whatIsCTF": {
+    "coming_soon": {
+      "title": "Innehåll kommer snart",
+      "description": "Vi arbetar med att skapa omfattande guider om Capture The Flag-tävlingar. Kom tillbaka snart!"
+    }
+  },
   "allnews": {
     "title": "Alla nyheter"
   },
