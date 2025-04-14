@@ -39,10 +39,22 @@
     "title": "CTF-lag och -tävlingar i Sverige",
     "subtitle": "Upptäck aktiva Capture the Flag-lag och -tävlingar runtom i landet och se var de finns",
     "search": "Sök efter namn eller stad...",
+    "filters": {
+      "all": "Alla",
+      "teams": "Lag",
+      "competitions": "Tävlingar"
+    },
+    "section_teams": "Lag",
+    "section_competitions": "Tävlingar",
     "team": {
       "achievements": "Prestationer",
-      "visit_website": "Besök webbplats"
+      "visit_website": "Besök webbplats",
+      "default_description": "Ett aktivt CTF-lag i Sverige."
     },
+    "competition": {
+      "default_description": "En CTF-tävling i Sverige." 
+    },
+    "no_results": "Inga resultat hittades med söktermen",
     "no_teams": "Inga team hittades med söktermen",
     "clear_search": "Rensa sökning",
     "missing_team": {
