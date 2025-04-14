@@ -1,142 +1,59 @@
 
 {
   "common": {
-    "home": "Hem 🏠",
-    "whatIsCTF": "Vad är CTF? 🤔",
-    "teams": "Lag och tävingar 🏆",
-    "ctfkongress": "CTF-Kongress 👑",
-    "contact": "Kontakt 📞",
-    "join": "Gå med i CTF-Kongress 🚀",
-    "read_more": "Läs mer ✨"
+    "home": "Hemma 🏠 ZAMN! 💥",
+    "whatIsCTF": "CTF? SLAYYY 🤯🚀",
+    "teams": "LAG POGGERS 🏆💦",
+    "ctfkongress": "CTF-KONGRESS NO CAP 👑🔥",
+    "contact": "SLIDE IN OUR DMS 📞💬",
+    "join": "YEET INTO CTF-KONGRESS 🚀💣",
+    "read_more": "GIMME THE TEA ✨🍵"
   },
   "homepage": {
     "hero": {
-      "title": "Capture The Flag - Sverige 🇸🇪",
-      "subtitle": "Vi samlar CTF-Sverige! 🔥",
-      "join_button": "Gå med i CTF-Kongress 💯",
-      "learn_more": "Hur spelar man CTF? 💻"
+      "title": "Capture The Flag - SWEDEN CORE 🇸🇪🤪",
+      "subtitle": "WE BE VIBIN' IN CTF UNIVERSE 🌈💥",
+      "join_button": "SMASH THAT CTF-KONGRESS JOIN 💯🔥",
+      "learn_more": "HOW TO GAMER MODE CTF? 🎮💻"
     },
     "news": {
-      "title": "Nyheter 📰",
-      "latest_news": "Senaste nytt 🆕",
-      "more_news": "Visa alla nyheter 👀"
+      "title": "GOSSIP CENTRAL 📰🍿",
+      "latest_news": "FRESH TEA INCOMING 🆕💦",
+      "more_news": "GIMME ALL THE DEETS 👀🔍"
     },
     "cta": {
-      "title": "Gå med i CTF-Kongress! 🔥",
-      "description": "Bli en del av nätverket för CTF-entusiaster 👾",
-      "button": "Ansök om medlemskap 📝"
+      "title": "YOLO INTO CTF-KONGRESS! 🚀🤯",
+      "description": "JOIN THE CRACKED CYBER SQUAD 👾💥",
+      "button": "APPLY OR DIE TRYING 📝🔥"
     },
     "sponsors": {
-      "title": "Våra partners 🤝",
-      "interested": "Intresserad av att bli partner? Kontakta oss! 💌",
-      "contact_us": "Kontakta oss 📣"
-    }
-  },
-  "allnews": {
-    "title": "Alla nyheter 📰"
-  },
-  "teams": {
-    "title": "CTF-lag och -tävlingar i Sverige 🇸🇪",
-    "subtitle": "Upptäck aktiva Capture the Flag-lag och -tävlingar runtom i landet och se var de finns 🗺️",
-    "search": "Sök efter namn eller stad... 🔎",
-    "filters": {
-      "all": "Alla 🌐",
-      "teams": "Lag 👥",
-      "competitions": "Tävlingar 🏁"
-    },
-    "section_teams": "Lag 👥",
-    "section_competitions": "Tävlingar 🏁",
-    "team": {
-      "achievements": "Prestationer 🏆",
-      "visit_website": "Besök webbplats 🌐",
-      "default_description": "Ett aktivt CTF-lag i Sverige. 💪"
-    },
-    "competition": {
-      "default_description": "En CTF-tävling i Sverige. 🎯" 
-    },
-    "no_results": "Inga resultat hittades med söktermen 😕",
-    "no_teams": "Inga team hittades med söktermen 🤷‍♂️",
-    "clear_search": "Rensa sökning ❌",
-    "missing_team": {
-      "title": "Saknas ditt lag? 🤔",
-      "description": "Är du med i ett lag som inte finns med på listan? Skriv i CTF-Kongress Discord! 💬",
-      "button": "Gå med i CTF-Kongress 🚀"
+      "title": "OUR LEGENDARY HOMIES 🤝💸",
+      "interested": "WANNA COLLAB? SLIDE IN OUR DMS 💌🤪",
+      "contact_us": "HIT US UP 📣💥"
     }
   },
   "ctfkongress": {
-    "title": "CTF-Kongress 👑",
-    "subtitle": "Sveriges nätverk för Capture The Flag-entusiaster 🇸🇪",
     "network": {
-      "title": "Om nätverket ℹ️",
-      "description": "CTF-Kongress är ett nätverk som samlar individer, lag och organisationer med intresse för Capture The Flag (CTF) i Sverige. Vi fungerar som en plattform för kunskapsdelning, samarbete och utveckling inom cybersäkerhetsområdet med fokus på CTF-tävlingsformen. 🛡️",
-      "membership": "Med över 200 medlemmar från hela landet representerar vi ett brett spektrum av kunskap och erfarenhet inom cybersäkerhet. 🧠",
-      "goals": {
-        "title": "Våra mål 🎯",
-        "item1": "Att samla CTF-Sverige och skapa möten inom scenen 🤝",
-        "item2": "Att främja kunskapsutbyte mellan CTF-spelare och -lag i Sverige 📚",
-        "item3": "Att främja CTF som tävlingsform 🏆"
-      },
-      "stats": {
-        "title": "Nätverket i siffror 📊",
-        "teams": "Aktiva lag 👥",
-        "members": "Medlemmar 👨‍💻👩‍💻",
-        "founded": "Grundat 🗓️"
-      },
       "join": {
-        "title": "Gå med i vår Discord 💬",
-        "description": "Anslut dig till CTF-entusiaster från hela Sverige i vår Discord-server. 🇸🇪",
-        "requirements_title": "Medlemskrav ✅",
-        "requirements_desc": "För att gå med behöver du vara aktiv inom den svenska CTF-scenen och ha en referens från en befintlig medlem. 🔐",
-        "discord_title": "Om vår Discord-server 👾",
-        "discord_desc": "Vår Discord-server är en samlingsplats CTF-spelare och -organisatörer i Sverige. 🎮",
-        "button": "Gå med i CTF-Kongress 🚀"
+        "requirements_desc": "NO NORMIES ALLOWED. MUST HAVE ELITE HACKER VIBES 🔐🤖",
+        "discord_desc": "OUR DISCORD: WHERE CYBER LEGENDS ARE BORN 🎮💥"
       }
     },
     "event": {
-      "title": "Årliga CTF-BBQ 🍖",
-      "description": "Varje år anordnar vi en BBQ för CTF-Kongress där medlemmar från hela landet samlas för att dela kunskap, lära känna varandra och diskutera utvecklingen av CTF-scenen i Sverige. 🌞",
+      "description": "ANNUAL GAMER MEETUP WHERE WE ABSOLUTELY DEMOLISH BBQ AND NETWORK 🍖🔥",
       "details": {
-        "title": "Evenemangsdetaljer 📝",
-        "frequency": "Frekvens ⏱️",
-        "frequency_value": "Årligen (runt maj/juni) 🗓️",
-        "duration": "Längd ⌛",
-        "duration_value": "En eftermiddag 🕒",
-        "location": "Plats 📍",
-        "location_value": "Stockholm, plats anges till gäster privat 🤫"
+        "frequency_value": "ONCE A YEAR WHEN THE CYBER VIBES ARE IMMACULATE 🗓️✨",
+        "location_value": "SECRET STOCKHOLM LOCATION. YOU MUST BE CHOSEN 🤫🚀"
       },
       "activities": {
-        "title": "Aktiviteter 🎯",
-        "item1": "Grill i vårsolen 🔥☀️",
-        "item2": "Utnämningar för goda insatser för CTF-scenen 🏅",
-        "item3": "Nätverkande och sociala aktiviteter 🤝"
+        "item1": "GRILL SO HOT IT MELTS FIREWALLS 🔥☀️",
+        "item2": "GIVING OUT CRACKED ACHIEVEMENT MEDALS 🏅💣",
+        "item3": "NETWORKING THAT BREAKS THE INTERNET 🤝🌐"
       },
       "faq": {
-        "title": "Vanliga frågor ❓",
-        "q1": "Vem kan delta i CTF-Kongress? 🤔",
-        "a1": "Alla som är medlemmar i nätverket är välkomna att delta. För att bli medlem behöver du vara kopplad till något CTF-lag/-org samt ha referens från befintlig medlem som kan gå i god för dig. ✅",
-        "q2": "Kostar det något att delta? 💸",
-        "a2": "Självkostnadspris för grill och öl! Man kan BYOB med fördel 🍻"
+        "a1": "IF YOU'RE A CYBER LEGEND WITH PEAK SKILLS, YOU'RE IN. NO CAP. 💯🤖",
+        "a2": "CHEAP AF. BRING YOUR OWN BREW AND VIBE 🍻🚀"
       }
     }
-  },
-  "contact": {
-    "title": "Kontakta oss 📞",
-    "subtitle": "Har du frågor eller vill veta mer om Capture the Flag? Vi hjälper dig gärna! 💬",
-    "about": {
-      "title": "Om oss ℹ️",
-      "description": "CTF-Kongress är ett nätverk som samlar Capture The Flag-lag och tävlingsorganisatörer i hela Sverige. Vi möts i forumet på Discord och vid årliga eventet CTF-Kongress. 🇸🇪",
-      "vision_title": "Vision 🔭",
-      "vision": "Vårt mål är att bygga en stark CTF-scen i Sverige genom att dela kunskap och främja tävingsformen. 🚀"
-    },
-    "contact_info": {
-      "title": "Kontaktinformation 📋",
-      "email": "Email 📧",
-      "discord": "Discord Server 💬"
-    }
-  },
-  "footer": {
-    "links": "Länkar 🔗",
-    "contact": "Kontakt 📞",
-    "copyright": "© {{year}} Kodsport Sverige. Alla rättigheter förbehållna. ©️"
   }
 }
