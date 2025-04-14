@@ -1,3 +1,4 @@
+
 {
   "common": {
     "home": "Hem",
@@ -29,6 +30,9 @@
       "interested": "Intresserad av att bli partner? Kontakta oss!",
       "contact_us": "Kontakta oss"
     }
+  },
+  "allnews": {
+    "title": "Alla nyheter"
   },
   "teams": {
     "title": "CTF-lag och -tävlingar i Sverige",

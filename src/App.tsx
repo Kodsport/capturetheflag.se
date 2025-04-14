@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import NewsDetail from "./pages/NewsDetail";
 import WhatIsCTF from "./pages/WhatIsCTF";
 import CTFKongress from "./pages/CTFKongress";
+import AllNews from "./pages/AllNews";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/ctf-kongress" element={<CTFKongress />} />
           <Route path="/news/:id" element={<NewsDetail />} />
+          <Route path="/news" element={<AllNews />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

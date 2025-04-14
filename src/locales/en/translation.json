@@ -31,6 +31,9 @@
       "contact_us": "Contact us"
     }
   },
+  "allnews": {
+    "title": "All News"
+  },
   "teams": {
     "title": "CTF teams and competitions in Sweden",
     "subtitle": "Discover active Capture the Flag teams and competitions around the country and see where they are located",

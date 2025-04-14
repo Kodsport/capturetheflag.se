@@ -103,9 +103,11 @@ const Index = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <Button variant="outline" className="border-ctf-blue text-ctf-blue hover:bg-ctf-blue hover:text-white">
-              {t('homepage.news.more_news')}
-            </Button>
+            <Link to="/news">
+              <Button variant="outline" className="border-ctf-blue text-ctf-blue hover:bg-ctf-blue hover:text-white">
+                {t('homepage.news.more_news')}
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
