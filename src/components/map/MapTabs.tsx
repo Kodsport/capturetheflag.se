@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTranslation } from 'react-i18next';
 
 interface MapTabsProps {
   activeTab: string;
@@ -8,6 +9,8 @@ interface MapTabsProps {
 }
 
 const MapTabs: React.FC<MapTabsProps> = ({ activeTab, onTabChange }) => {
+  const { t } = useTranslation();
+  
   return (
     <Tabs 
       value={activeTab} 
@@ -18,19 +21,19 @@ const MapTabs: React.FC<MapTabsProps> = ({ activeTab, onTabChange }) => {
           value="teams" 
           onClick={() => onTabChange('teams')}
         >
-          Lag
+          {t('teams.filters.teams')}
         </TabsTrigger>
         <TabsTrigger 
           value="competitions" 
           onClick={() => onTabChange('competitions')}
         >
-          Tävlingar
+          {t('teams.filters.competitions')}
         </TabsTrigger>
         <TabsTrigger 
           value="all" 
           onClick={() => onTabChange('all')}
         >
-          Alla
+          {t('teams.filters.all')}
         </TabsTrigger>
       </TabsList>
     </Tabs>

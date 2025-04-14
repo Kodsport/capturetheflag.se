@@ -6,6 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // Import language files
 import enTranslation from './locales/en/translation.json';
 import svTranslation from './locales/sv/translation.json';
+import skibidiTranslation from './locales/skibidi/translation.json';
 
 // Initialize i18next
 i18n
@@ -19,6 +20,9 @@ i18n
       sv: {
         translation: svTranslation,
       },
+      skibidi: {
+        translation: skibidiTranslation,
+      }
     },
     fallbackLng: 'sv',
     detection: {
