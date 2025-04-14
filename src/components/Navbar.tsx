@@ -67,18 +67,18 @@ const Navbar = () => {
                 {t('common.whatIsCTF')}
               </Link>
               <Link 
-                to="/ctf-kongress" 
-                className="hover:text-ctf-teal transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('common.ctfkongress')}
-              </Link>
-              <Link 
                 to="/teams" 
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t('common.teams')}
+              </Link>
+              <Link 
+                to="/ctf-kongress" 
+                className="hover:text-ctf-teal transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t('common.ctfkongress')}
               </Link>
               <Link 
                 to="/contact" 

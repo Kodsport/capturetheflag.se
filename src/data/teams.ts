@@ -60,6 +60,7 @@ export const teamsData: TeamItem[] = [
     country: "Sweden",
     location: { lat: 57.708, lng: 11.974 },
     description: "Engieers that love kebab (and CTF)",
+    website: "https://kebab.team/",
     achievements: [
       "???"
     ]

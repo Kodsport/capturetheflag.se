@@ -34,7 +34,7 @@ const AllNews = () => {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Nyheter</BreadcrumbPage>
+              <BreadcrumbPage>{t('common.news')}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>

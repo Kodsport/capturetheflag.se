@@ -70,7 +70,7 @@ const NewsDetail = () => {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link to="/">Nyheter</Link>
+                <Link to="/news">{t('common.news')}</Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
@@ -104,7 +104,7 @@ const NewsDetail = () => {
             ))}
           </div>
           
-          <Link to="/">
+          <Link to="/news">
             <Button variant="outline" className="mt-8">
               <ChevronLeft className="mr-2 h-4 w-4" />
               {t('homepage.news.more_news')}
