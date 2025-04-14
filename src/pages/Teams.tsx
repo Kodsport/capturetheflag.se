@@ -12,6 +12,7 @@ import { ExternalLink } from 'lucide-react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const Teams = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -143,9 +144,11 @@ const Teams = () => {
           <p className="text-lg max-w-2xl mx-auto mb-8">
             {t('teams.missing_team.description')}
           </p>
-          <Button className="bg-ctf-blue hover:bg-ctf-blue/80">
-            {t('teams.missing_team.button')}
-          </Button>
+          <Link to="/ctf-kongress">
+            <Button className="bg-ctf-blue hover:bg-ctf-blue/80">
+              {t('teams.missing_team.button')}
+            </Button>
+          </Link>
         </div>
       </section>
       

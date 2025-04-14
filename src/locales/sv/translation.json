@@ -41,9 +41,9 @@
     "no_teams": "Inga team hittades med söktermen",
     "clear_search": "Rensa sökning",
     "missing_team": {
-      "title": "Saknas ditt team?",
-      "description": "Är du med i ett lag som inte finns med på listan? Kontakta oss för att lägga till er!",
-      "button": "Registrera ditt team"
+      "title": "Saknas ditt lag?",
+      "description": "Är du med i ett lag som inte finns med på listan? Skriv i CTF-Kongress Discord!",
+      "button": "Gå med i CTF-Kongress"
     }
   },
   "ctfkongress": {
@@ -55,7 +55,7 @@
       "membership": "Med över 200 medlemmar från hela landet representerar vi ett brett spektrum av kunskap och erfarenhet inom cybersäkerhet.",
       "goals": {
         "title": "Våra mål",
-        "item1": "Att samla CTF-Sverige och främja möten inom scenen",
+        "item1": "Att samla CTF-Sverige och skapa möten inom scenen",
         "item2": "Att främja kunskapsutbyte mellan CTF-spelare och -lag i Sverige",
         "item3": "Att främja CTF som tävlingsform"
       },
@@ -66,13 +66,13 @@
         "founded": "Grundat"
       },
       "join": {
-        "title": "Gå med i vår gemenskap",
+        "title": "Gå med i vår Discord",
         "description": "Anslut dig till CTF-entusiaster från hela Sverige i vår Discord-server.",
         "requirements_title": "Medlemskrav",
-        "requirements_desc": "För att gå med i gemenskapen behöver du vara aktiv inom den svenska CTF-scenen och ha en referens från en befintlig medlem.",
+        "requirements_desc": "För att gå med behöver du vara aktiv inom den svenska CTF-scenen och ha en referens från en befintlig medlem.",
         "discord_title": "Om vår Discord-server",
-        "discord_desc": "Vår Discord-server är navet för diskussioner, eventplanering och kunskapsdelning för CTF-entusiaster i Sverige.",
-        "button": "Gå med i Discord"
+        "discord_desc": "Vår Discord-server är en samlingsplats CTF-spelare och -organisatörer i Sverige.",
+        "button": "Gå med i CTF-Kongress"
       }
     },
     "event": {
@@ -98,9 +98,7 @@
         "q1": "Vem kan delta i CTF-Kongress?",
         "a1": "Alla som är medlemmar i nätverket är välkomna att delta. För att bli medlem behöver du vara kopplad till något CTF-lag/-org samt ha referens från befintlig medlem som kan gå i god för dig.",
         "q2": "Kostar det något att delta?",
-        "a2": "Självkostnadspris för grill och öl! Man kan BYOB med fördel",
-        "q3": "Hur kan jag hjälpa till med att organisera evenemanget?",
-        "a3": "Vi söker alltid frivilliga! Kontakta oss via e-post eller Discord om du vill hjälpa till."
+        "a2": "Självkostnadspris för grill och öl! Man kan BYOB med fördel"
       }
     }
   },

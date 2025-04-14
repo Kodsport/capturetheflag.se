@@ -46,7 +46,7 @@ const CTFKongress = () => {
                 <span className="text-lg">{t('ctfkongress.network.membership')}</span>
               </div>)}
               
-              <div className="bg-gray-50 rounded-lg p-6 mb-8">
+              <div className="bg-gray-50 rounded-lg pt-6 mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-ctf-blue">{t('ctfkongress.network.goals.title')}</h3>
                 <ul className="list-disc list-inside space-y-3 text-gray-700">
                   <li>{t('ctfkongress.network.goals.item1')}</li>
@@ -167,14 +167,6 @@ const CTFKongress = () => {
                 </AccordionTrigger>
                 <AccordionContent>
                   {t('ctfkongress.event.faq.a2')}
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger className="text-left">
-                  {t('ctfkongress.event.faq.q3')}
-                </AccordionTrigger>
-                <AccordionContent>
-                  {t('ctfkongress.event.faq.a3')}
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
