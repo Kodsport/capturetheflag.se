@@ -37,12 +37,16 @@ const Index = () => {
               {t('homepage.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/ctf-kongress">
               <Button className="bg-ctf-teal hover:bg-ctf-teal/80 text-white">
                 {t('homepage.hero.join_button')}
               </Button>
+              </Link>
+              <Link to="/what-is-ctf">
               <Button variant="outline" className="text-black border-white hover:bg-white/80 hover:text-black/90">
                 {t('homepage.hero.learn_more')}
               </Button>
+              </Link>
             </div>
           </div>
         </div>
