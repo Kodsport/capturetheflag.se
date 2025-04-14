@@ -1,8 +1,9 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Users, Globe } from "lucide-react";
+import { Calendar, Users, Globe, MessageCircle } from "lucide-react";
 import { 
   Accordion,
   AccordionContent,
@@ -10,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useTranslation } from "react-i18next";
+import { contactInfo } from "@/data/contact";
 
 const CTFKongress = () => {
   const { t } = useTranslation();
@@ -31,7 +33,7 @@ const CTFKongress = () => {
       {/* About the Network */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Network Description */}
             <div className="lg:col-span-2">
               <h2 className="text-2xl font-bold mb-6 text-ctf-blue">{t('ctfkongress.network.title')}</h2>
@@ -54,28 +56,42 @@ const CTFKongress = () => {
               </div>
             </div>
             
-            {/* Network Stats */}
-            {false && (<div>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-4 text-ctf-blue">{t('ctfkongress.network.stats.title')}</h3>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center pb-2 border-b">
-                      <span className="text-gray-600">{t('ctfkongress.network.stats.teams')}</span>
-                      <span className="font-semibold">15+</span>
-                    </div>
-                    <div className="flex justify-between items-center pb-2 border-b">
-                      <span className="text-gray-600">{t('ctfkongress.network.stats.members')}</span>
-                      <span className="font-semibold">200+</span>
-                    </div>
-                    <div className="flex justify-between items-center pb-2 border-b">
-                      <span className="text-gray-600">{t('ctfkongress.network.stats.founded')}</span>
-                      <span className="font-semibold">2020</span>
-                    </div>
+            {/* Discord Call to Action */}
+            <div>
+              <Card className="bg-gradient-to-br from-purple-500 to-ctf-blue border-none shadow-lg overflow-hidden">
+                <CardContent className="p-6 text-white">
+                  <div className="flex items-center mb-4">
+                    <MessageCircle className="h-7 w-7 mr-3 text-white" />
+                    <h3 className="text-xl font-bold">{t('ctfkongress.network.join.title')}</h3>
                   </div>
+                  
+                  <p className="mb-6 text-white/90">
+                    {t('ctfkongress.network.join.description')}
+                  </p>
+                  
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold mb-2">{t('ctfkongress.network.join.requirements_title')}</h4>
+                    <p className="text-sm text-white/80">
+                      {t('ctfkongress.network.join.requirements_desc')}
+                    </p>
+                  </div>
+                  
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold mb-2">{t('ctfkongress.network.join.discord_title')}</h4>
+                    <p className="text-sm text-white/80">
+                      {t('ctfkongress.network.join.discord_desc')}
+                    </p>
+                  </div>
+                  
+                  <Button 
+                    className="w-full bg-white text-ctf-blue hover:bg-white/90 hover:text-ctf-blue font-semibold"
+                    onClick={() => window.open(contactInfo.discord_invite_url, '_blank')}
+                  >
+                    {t('ctfkongress.network.join.button')}
+                  </Button>
                 </CardContent>
               </Card>
-            </div>)}
+            </div>
           </div>
         </div>
       </section>
