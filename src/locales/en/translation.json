@@ -1,3 +1,4 @@
+
 {
   "common": {
     "home": "Home",
@@ -12,16 +13,16 @@
     "hero": {
       "title": "Capture The Flag - Sweden",
       "subtitle": "We gather CTF-Sweden!",
-      "join_button": "Become a member",
-      "learn_more": "Learn more"
+      "join_button": "Join CTF-Kongress",
+      "learn_more": "How to play CTF?"
     },
     "news": {
       "title": "Latest news",
-      "more_news": "View all news"
+      "more_news": "Show all news"
     },
     "cta": {
-      "title": "Join CTF-Sweden today",
-      "description": "Become part of Sweden's leading network for CTF enthusiasts and cybersecurity experts.",
+      "title": "Join CTF-Kongress!",
+      "description": "Become part of the network for CTF enthusiasts",
       "button": "Apply for membership"
     },
     "sponsors": {
@@ -32,8 +33,8 @@
   },
   "teams": {
     "title": "CTF teams and competitions in Sweden",
-    "subtitle": "Discover active Capture the Flag teams and competitions around the country",
-    "search": "Search for team or city...",
+    "subtitle": "Discover active Capture the Flag teams and competitions around the country and see where they are located",
+    "search": "Search for name or city...",
     "team": {
       "achievements": "Achievements",
       "visit_website": "Visit website"
@@ -42,22 +43,22 @@
     "clear_search": "Clear search",
     "missing_team": {
       "title": "Is your team missing?",
-      "description": "Are you in a team that's not on the list? Contact us to add your team!",
-      "button": "Register your team"
+      "description": "Are you on a team that's not on the list? Write in the CTF-Kongress Discord!",
+      "button": "Join CTF-Kongress"
     }
   },
   "ctfkongress": {
     "title": "CTF-Kongress",
-    "subtitle": "Sweden's largest network for Capture The Flag enthusiasts",
+    "subtitle": "Sweden's network for Capture The Flag enthusiasts",
     "network": {
       "title": "About the network",
       "description": "CTF-Kongress is a network that brings together individuals, teams, and organizations interested in Capture The Flag (CTF) in Sweden. We serve as a platform for knowledge sharing, collaboration, and development in the cybersecurity field with a focus on CTF competitions.",
       "membership": "With over 200 members from across the country, we represent a broad spectrum of knowledge and experience in cybersecurity.",
       "goals": {
         "title": "Our goals",
-        "item1": "To promote knowledge exchange between CTF players and teams in Sweden",
-        "item2": "To help organize and improve CTF competitions in Sweden",
-        "item3": "To represent Sweden internationally within the CTF community"
+        "item1": "To gather CTF-Sweden and create meetings within the scene",
+        "item2": "To promote knowledge exchange between CTF players and teams in Sweden",
+        "item3": "To promote CTF as a competition format"
       },
       "stats": {
         "title": "Network statistics",
@@ -66,46 +67,40 @@
         "founded": "Founded"
       },
       "join": {
-        "title": "Join our community",
-        "description": "Connect with CTF enthusiasts from across Sweden in our Discord server.",
+        "title": "Join our Discord",
+        "description": "Connect with CTF enthusiasts from all over Sweden in our Discord server.",
         "requirements_title": "Membership requirements",
-        "requirements_desc": "To join the community, you need to be active in the Swedish CTF scene and have a reference from an existing member.",
+        "requirements_desc": "To join, you need to be active in the Swedish CTF scene and have a reference from an existing member.",
         "discord_title": "About our Discord server",
-        "discord_desc": "Our Discord server is the central hub for discussion, event planning, and knowledge sharing for CTF enthusiasts in Sweden.",
-        "button": "Join Discord"
+        "discord_desc": "Our Discord server is a gathering place for CTF players and organizers in Sweden.",
+        "button": "Join CTF-Kongress"
       }
     },
     "event": {
-      "title": "Annual event",
-      "description": "Each year, we organize the CTF-Kongress event where members from across the country gather to share knowledge, get to know each other, and discuss the development of the CTF scene in Sweden. This event has become an important meeting place for strengthening the community and finding new collaborations.",
+      "title": "Annual CTF-BBQ",
+      "description": "Each year, we organize a BBQ for CTF-Kongress where members from across the country gather to share knowledge, get to know each other, and discuss the development of the CTF scene in Sweden.",
       "details": {
         "title": "Event details",
         "frequency": "Frequency",
-        "frequency_value": "Annually (September/October)",
+        "frequency_value": "Annually (around May/June)",
         "duration": "Duration",
-        "duration_value": "2-3 days",
+        "duration_value": "One afternoon",
         "location": "Location",
-        "location_value": "Rotates between different cities in Sweden"
+        "location_value": "Stockholm, location shared privately with guests"
       },
       "activities": {
         "title": "Activities",
-        "item1": "Workshops on CTF techniques and strategies",
-        "item2": "Panel discussions on cybersecurity",
-        "item3": "Mini-CTF competitions on site",
-        "item4": "Networking and social activities"
+        "item1": "Grilling in the spring sun",
+        "item2": "Awards for good contributions to the CTF scene",
+        "item3": "Networking and social activities"
       },
       "faq": {
         "title": "Frequently Asked Questions",
         "q1": "Who can participate in CTF-Kongress?",
-        "a1": "Anyone who is a member of the network is welcome to participate. To become a member, you just need to register on our website or Discord.",
+        "a1": "Anyone who is a member of the network is welcome to participate. To become a member, you need to be connected to a CTF team/organization and have a reference from an existing member who can vouch for you.",
         "q2": "Is there a cost to participate?",
-        "a2": "There is a small participation fee that covers food and venues during the event. The exact cost varies from year to year.",
-        "q3": "How can I help organize the event?",
-        "a3": "We're always looking for volunteers! Contact us via email or Discord if you want to help out."
-      },
-      "next_event": "Next event:",
-      "location": "Stockholm",
-      "date": "October 2025"
+        "a2": "Self-cost price for grill and beer! You can BYOB as well"
+      }
     }
   },
   "contact": {
