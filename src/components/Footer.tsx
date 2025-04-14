@@ -34,6 +34,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/ctf-kongress" className="text-gray-300 hover:text-ctf-teal transition-colors">
+                  {t('common.ctfkongress')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/what-is-ctf" className="text-gray-300 hover:text-ctf-teal transition-colors">
                   {t('common.whatIsCTF')}
                 </Link>

@@ -57,7 +57,7 @@ const Index = () => {
         <section className="py-16 bg-ctf-light">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center text-ctf-blue">
-              {t('homepage.news.title')}
+              {t('homepage.news.latest_news')}
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -112,18 +112,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="py-16 bg-ctf-blue text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">{t('homepage.cta.title')}</h2>
-          <p className="text-xl max-w-2xl mx-auto mb-8">
-            {t('homepage.cta.description')}
-          </p>
-          <Button className="bg-white text-ctf-blue hover:bg-ctf-teal hover:text-white">
-            {t('homepage.cta.button')}
-          </Button>
-        </div>
-      </section>
       
       {/* Sponsors Section */}
       <section className="py-16 bg-gray-50">

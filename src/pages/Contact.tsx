@@ -25,7 +25,7 @@ const Contact = () => {
       {/* Contact Info and Form Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Contact Information */}
             <div>
               <h2 className="text-2xl font-bold mb-6 text-ctf-blue">{t('contact.about.title')}</h2>
@@ -38,7 +38,9 @@ const Contact = () => {
                 {t('contact.about.vision')}
               </p>
               
-              <div className="space-y-6">
+              
+            </div>
+            <div className="">
                 <Card>
                   <CardContent className="p-6">
                     <h3 className="text-lg font-semibold mb-2">{t('contact.contact_info.title')}</h3>
@@ -49,17 +51,10 @@ const Contact = () => {
                           {contactInfo.email}
                         </a>
                       </li>
-                      <li className="flex items-start">
-                        <span className="font-medium w-24">{t('contact.contact_info.discord')}:</span>
-                        <a href={contactInfo.discord_invite_url} className="text-ctf-teal hover:underline">
-                          {contactInfo.discord_invite_url}
-                        </a>
-                      </li>
                     </ul>
                   </CardContent>
                 </Card>
               </div>
-            </div>
           </div>
         </div>
       </section>

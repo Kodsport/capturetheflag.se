@@ -17,7 +17,8 @@
       "learn_more": "Hur spelar man CTF?"
     },
     "news": {
-      "title": "Senaste nytt",
+      "title": "Nyheter",
+      "latest_news": "Senaste nytt",
       "more_news": "Visa alla nyheter"
     },
     "cta": {
@@ -108,7 +109,7 @@
   },
   "contact": {
     "title": "Kontakta oss",
-    "subtitle": "Har du frågor eller vill veta mer om CTF-Kongress? Vi hjälper dig gärna!",
+    "subtitle": "Har du frågor eller vill veta mer om Capture the Flag? Vi hjälper dig gärna!",
     "about": {
       "title": "Om oss",
       "description": "CTF-Kongress är ett nätverk som samlar Capture The Flag-lag och tävlingsorganisatörer i hela Sverige. Vi möts i forumet på Discord och vid årliga eventet CTF-Kongress.",

@@ -46,4 +46,23 @@ export const competitionsData: CompetitionItem[] = [
     description: "Årlig CTF från SÄPO, MUST och FRA",
     format: "Jeopardy"
   },
+  {
+    id: 4,
+    name: "Swedish Cybersecurity Callenge",
+    location: { lat: 57.708, lng: 11.974 }, // TODO
+    city: "Online + Stockholm",
+    country: "",
+    description: "Qualifier for the SNHT team",
+    format: "Jeopardy",
+    website: "https://snht.se/"
+  },
+  {
+    id: 5,
+    name: "CERT-SE CTF",
+    location: { lat: 57.708, lng: 11.974 }, // TODO
+    city: "Online",
+    country: "",
+    description: "",
+    website: "https://www.cert.se/2024/09/cert-se-ctf2024.html",
+  }
 ];

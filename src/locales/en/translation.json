@@ -17,7 +17,8 @@
       "learn_more": "How to play CTF?"
     },
     "news": {
-      "title": "Latest news",
+      "title": "News",
+      "latest_news": "Latest news",
       "more_news": "Show all news"
     },
     "cta": {
