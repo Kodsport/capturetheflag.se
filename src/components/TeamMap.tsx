@@ -6,6 +6,7 @@ import { TeamItem } from '@/data/teams';
 import { CompetitionItem } from '@/data/competitions';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTranslation } from "react-i18next";
 
 interface TeamMapProps {
   teams: TeamItem[];
@@ -20,6 +21,7 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
   const [activeCompetition, setActiveCompetition] = useState<CompetitionItem | null>(null);
   const [activeTab, setActiveTab] = useState<string>('teams');
   const markersRef = useRef<{ [id: string]: mapboxgl.Marker }>({});
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!mapContainer.current || !mapboxToken || map.current) return;
@@ -230,7 +232,7 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
           />
           
           {activeTeam && (
-            <div className="absolute left-4 bottom-4 w-80 bg-white p-4 rounded-lg shadow-lg z-10">
+            <div className="absolute left-4 top-20 w-80 max-h-[calc(100%-120px)] overflow-y-auto bg-white p-4 rounded-lg shadow-lg z-10">
               <div className="flex justify-between items-start">
                 <h3 className="text-lg font-bold text-ctf-blue">{activeTeam.name}</h3>
                 <button 
@@ -240,10 +242,9 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
                   ✕
                 </button>
               </div>
-              <p className="text-sm text-gray-600 mt-1">{activeTeam.city}, {activeTeam.country}</p>
+              <p className="text-sm text-gray-600 mt-1">{[activeTeam.city, activeTeam.country].filter(a => !!a).join(', ')}</p>
               <p className="text-sm mt-2">{activeTeam.description}</p>
               <div className="mt-3">
-                <span className="text-sm font-medium">Members: {activeTeam.members}</span>
                 {activeTeam.website && (
                   <div className="mt-1">
                     <a 
@@ -252,7 +253,7 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
                       rel="noopener noreferrer"
                       className="text-sm text-ctf-teal hover:underline"
                     >
-                      Visit website
+                      {t('teams.team.visit_website')}
                     </a>
                   </div>
                 )}
@@ -271,7 +272,7 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
           )}
 
           {activeCompetition && (
-            <div className="absolute left-4 bottom-4 w-80 bg-white p-4 rounded-lg shadow-lg z-10">
+            <div className="absolute left-4 top-20 w-80 max-h-[calc(100%-120px)] overflow-y-auto bg-white p-4 rounded-lg shadow-lg z-10">
               <div className="flex justify-between items-start">
                 <h3 className="text-lg font-bold text-red-600">{activeCompetition.name}</h3>
                 <button 
@@ -281,8 +282,7 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
                   ✕
                 </button>
               </div>
-              <p className="text-sm text-gray-600 mt-1">{activeCompetition.city}, {activeCompetition.country}</p>
-              <p className="text-sm mt-1">Datum: {new Date(activeCompetition.date).toLocaleDateString('sv-SE')}</p>
+              <p className="text-sm text-gray-600 mt-1">{[activeCompetition.city, activeCompetition.country].filter(a => !!a).join(', ')}</p>
               {activeCompetition.format && (
                 <p className="text-sm mt-1">Format: {activeCompetition.format}</p>
               )}
@@ -295,7 +295,7 @@ const TeamMap = ({ teams, competitions = [] }: TeamMapProps) => {
                     rel="noopener noreferrer"
                     className="text-sm text-ctf-teal hover:underline"
                   >
-                    Visit website
+                    {t("teams.team.visit_website")}
                   </a>
                 </div>
               )}

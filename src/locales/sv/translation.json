@@ -33,7 +33,7 @@
   "teams": {
     "title": "CTF-lag och -tävlingar i Sverige",
     "subtitle": "Upptäck aktiva Capture the Flag-lag och -tävlingar runtom i landet och se var de finns",
-    "search": "Sök efter team, stad eller land...",
+    "search": "Sök efter namn eller stad...",
     "team": {
       "members": "medlemmar",
       "achievements": "Prestationer",

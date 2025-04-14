@@ -90,9 +90,7 @@ const Teams = () => {
                 <CardContent>
                   <p className="text-gray-600 mb-4">{team.description || "Ett aktivt CTF-lag i Sverige."}</p>
                   
-                  <div className="flex items-center gap-2 mb-4">
-                    <Badge className="bg-ctf-blue">{team.members} {t('teams.team.members')}</Badge>
-                  </div>
+            
                   
                   {team.achievements && team.achievements.length > 0 && (
                     <div className="mt-4">

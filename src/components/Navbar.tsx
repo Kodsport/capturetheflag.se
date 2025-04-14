@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-0 font-bold flex items-center">
             <span className="text-ctf-teal text-2xl">CTF</span>
-            <span className="text-2xl">-Sverige</span>
+            <span className="text-2xl">-SE</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -29,9 +29,7 @@ const Navbar = () => {
             <Link to="/what-is-ctf" className="hover:text-ctf-teal transition-colors">{t('common.whatIsCTF')}</Link>
             <Link to="/teams" className="hover:text-ctf-teal transition-colors">{t('common.teams')}</Link>
             <Link to="/contact" className="hover:text-ctf-teal transition-colors">{t('common.contact')}</Link>
-            <Button variant="outline" className="border-ctf-teal text-ctf-teal hover:bg-ctf-teal hover:text-white">
-              {t('common.join')}
-            </Button>
+   
             <LanguageSwitcher />
           </div>
 
@@ -81,12 +79,6 @@ const Navbar = () => {
               >
                 {t('common.contact')}
               </Link>
-              <Button 
-                variant="outline" 
-                className="border-ctf-teal text-ctf-teal hover:bg-ctf-teal hover:text-white w-full"
-              >
-                {t('common.join')}
-              </Button>
             </div>
           </div>
         )}

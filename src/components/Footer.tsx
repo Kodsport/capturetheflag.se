@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-ctf-teal">CTF</span>-Sverige
+              <span className="text-ctf-teal">CTF</span>-SE
             </h3>
             <p className="text-gray-300">
               CTF-Kongress är ett nätverk som främjar svenska CTF-scenen.
