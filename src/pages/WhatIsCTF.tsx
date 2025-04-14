@@ -22,9 +22,9 @@ const WhatIsCTF = () => {
         </div>
       </section>
       
-      {/* Overlay with Coming Soon message */}
+      {/* Overlay with Coming Soon message - Moved higher and reduced blur */}
       <div className="relative">
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-md flex flex-col items-center justify-center z-10">
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm flex flex-col items-center justify-start z-10 pt-12">
           <Clock className="h-16 w-16 text-ctf-blue mb-4" />
           <h2 className="text-3xl font-bold text-ctf-blue">{t('whatIsCTF.coming_soon.title')}</h2>
           <p className="text-lg text-ctf-blue/80 mt-2 max-w-md text-center px-4">
@@ -32,7 +32,7 @@ const WhatIsCTF = () => {
           </p>
         </div>
       
-        {/* Introduction - This content will be blurred */}
+        {/* Introduction - This content will be lightly blurred */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -61,7 +61,7 @@ const WhatIsCTF = () => {
           </div>
         </section>
         
-        {/* CTF Categories - This content will be blurred */}
+        {/* CTF Categories - This content will be lightly blurred */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center text-ctf-blue">CTF-kategorier</h2>
@@ -160,7 +160,7 @@ const WhatIsCTF = () => {
           </div>
         </section>
         
-        {/* CTF Formats - This content will be blurred */}
+        {/* CTF Formats - This content will be lightly blurred */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center text-ctf-blue">
@@ -229,7 +229,7 @@ const WhatIsCTF = () => {
           </div>
         </section>
         
-        {/* Getting Started - This content will be blurred */}
+        {/* Getting Started - This content will be lightly blurred */}
         <section className="py-16 bg-ctf-blue text-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">Kom igång med CTF</h2>
