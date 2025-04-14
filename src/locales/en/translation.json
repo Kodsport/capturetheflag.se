@@ -33,9 +33,8 @@
   "teams": {
     "title": "CTF teams and competitions in Sweden",
     "subtitle": "Discover active Capture the Flag teams and competitions around the country",
-    "search": "Search for team, city or country...",
+    "search": "Search for team or city...",
     "team": {
-      "members": "members",
       "achievements": "Achievements",
       "visit_website": "Visit website"
     },

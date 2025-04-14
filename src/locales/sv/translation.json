@@ -20,8 +20,8 @@
       "more_news": "Visa alla nyheter"
     },
     "cta": {
-      "title": "Gå med i CTF-Sverige idag",
-      "description": "Bli en del av Sveriges ledande nätverk för CTF-entusiaster och cybersäkerhetsexperter.",
+      "title": "Gå med i CTF-Kongress!",
+      "description": "Bli en del av nätverket för CTF-entusiaster",
       "button": "Ansök om medlemskap"
     },
     "sponsors": {
@@ -35,7 +35,6 @@
     "subtitle": "Upptäck aktiva Capture the Flag-lag och -tävlingar runtom i landet och se var de finns",
     "search": "Sök efter namn eller stad...",
     "team": {
-      "members": "medlemmar",
       "achievements": "Prestationer",
       "visit_website": "Besök webbplats"
     },

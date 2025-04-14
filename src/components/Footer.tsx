@@ -56,23 +56,6 @@ const Footer = () => {
         
         <div className="mt-8 pt-4 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-gray-500">{t('footer.copyright', { year: currentYear })}</p>
-          <div className="mt-2 md:mt-0 flex space-x-4">
-            {contactInfo.social?.github && (
-              <a href={contactInfo.social.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-ctf-teal">
-                GitHub
-              </a>
-            )}
-            {contactInfo.social?.twitter && (
-              <a href={contactInfo.social.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-ctf-teal">
-                Twitter
-              </a>
-            )}
-            {contactInfo.social?.linkedin && (
-              <a href={contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-ctf-teal">
-                LinkedIn
-              </a>
-            )}
-          </div>
         </div>
       </div>
     </footer>

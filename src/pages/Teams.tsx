@@ -84,7 +84,7 @@ const Teams = () => {
                 <CardHeader>
                   <CardTitle>{team.name}</CardTitle>
                   <CardDescription>
-                    {team.city}, {team.country}
+                    {[team.city, team.country].filter(a => !!a).join(', ')}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -92,7 +92,7 @@ const Teams = () => {
                   
             
                   
-                  {team.achievements && team.achievements.length > 0 && (
+                  {team.achievements.length > 0 && (
                     <div className="mt-4">
                       <h4 className="text-sm font-medium text-gray-500 mb-2">{t('teams.team.achievements')}</h4>
                       <ul className="list-disc pl-5 text-sm text-gray-600">

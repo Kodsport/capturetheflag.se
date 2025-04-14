@@ -12,7 +12,7 @@ export interface TeamItem {
   country: string;
   website?: string;
   description?: string;
-  achievements?: string[];
+  achievements: string[];
 }
 
 export const teamsData: TeamItem[] = [
