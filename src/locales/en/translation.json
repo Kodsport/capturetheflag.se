@@ -1,4 +1,3 @@
-
 {
   "common": {
     "home": "Home",
@@ -15,7 +14,7 @@
       "title": "Capture The Flag - Sweden",
       "subtitle": "We gather CTF-Sweden!",
       "join_button": "Join CTF-Kongress",
-      "learn_more": "How to play CTF?"
+      "discover_scene": "Discover the CTF Scene"
     },
     "news": {
       "title": "News",
@@ -93,7 +92,7 @@
         "title": "Join our Discord",
         "description": "Connect with CTF enthusiasts from all over Sweden in our Discord server.",
         "requirements_title": "Membership requirements",
-        "requirements_desc": "To join, you need to be active in the Swedish CTF scene and have a reference from an existing member.",
+        "requirements_desc": "To join, you need to be active in the Swedish CTF scene and have a reference from an existing member who can vouch for you.",
         "discord_title": "About our Discord server",
         "discord_desc": "Our Discord server is a gathering place for CTF players and organizers in Sweden.",
         "button": "Join CTF-Kongress"

@@ -44,7 +44,7 @@ const Index = () => {
               </Link>
               <Link to="/what-is-ctf">
               <Button variant="outline" className="text-black border-white hover:bg-white/80 hover:text-black/90">
-                {t('homepage.hero.learn_more')}
+                {t('homepage.hero.discover_scene')}
               </Button>
               </Link>
             </div>

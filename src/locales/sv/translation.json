@@ -1,4 +1,3 @@
-
 {
   "common": {
     "home": "Hem",
@@ -15,7 +14,7 @@
       "title": "Capture The Flag - Sverige",
       "subtitle": "Vi samlar CTF-Sverige!",
       "join_button": "Gå med i CTF-Kongress",
-      "learn_more": "Hur spelar man CTF?"
+      "discover_scene": "Upptäck CTF-scenen"
     },
     "news": {
       "title": "Nyheter",
@@ -93,7 +92,7 @@
         "title": "Gå med i vår Discord",
         "description": "Anslut dig till CTF-entusiaster från hela Sverige i vår Discord-server.",
         "requirements_title": "Medlemskrav",
-        "requirements_desc": "För att gå med behöver du vara aktiv inom den svenska CTF-scenen och ha en referens från en befintlig medlem.",
+        "requirements_desc": "För att gå med behöver du vara aktiv inom den svenska CTF-scenen och ha en referens från en befintlig medlem som kan gå i god för dig.",
         "discord_title": "Om vår Discord-server",
         "discord_desc": "Vår Discord-server är en samlingsplats CTF-spelare och -organisatörer i Sverige.",
         "button": "Gå med i CTF-Kongress"
