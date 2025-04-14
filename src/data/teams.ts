@@ -37,11 +37,9 @@ export const teamsData: TeamItem[] = [
     location: { lat: 59.11, lng: 15.45 },
     country: "Sverige",
     website: "https://snht.se",
-    description: "Hackinglandslaget",
+    description: "Svenska hackinglandslaget tävlar i ECSC",
     achievements: [
       "6:a European Cybersecurity Championship 2022",
-      "TODO",
-      "TODO"
     ]
   }
 ];

@@ -31,7 +31,7 @@ const CTFKongress = () => {
       {/* About the Network */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
             {/* Network Description */}
             <div className="lg:col-span-2">
               <h2 className="text-2xl font-bold mb-6 text-ctf-blue">{t('ctfkongress.network.title')}</h2>
@@ -39,10 +39,10 @@ const CTFKongress = () => {
                 {t('ctfkongress.network.description')}
               </p>
               
-              <div className="flex items-center mb-8">
+              {false && (<div className="flex items-center mb-8">
                 <Users className="h-6 w-6 mr-3 text-ctf-teal" />
                 <span className="text-lg">{t('ctfkongress.network.membership')}</span>
-              </div>
+              </div>)}
               
               <div className="bg-gray-50 rounded-lg p-6 mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-ctf-blue">{t('ctfkongress.network.goals.title')}</h3>
@@ -55,7 +55,7 @@ const CTFKongress = () => {
             </div>
             
             {/* Network Stats */}
-            <div>
+            {false && (<div>
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-4 text-ctf-blue">{t('ctfkongress.network.stats.title')}</h3>
@@ -75,7 +75,7 @@ const CTFKongress = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
+            </div>)}
           </div>
         </div>
       </section>
@@ -130,10 +130,6 @@ const CTFKongress = () => {
                       <span className="w-2 h-2 bg-ctf-teal rounded-full mr-2"></span>
                       {t('ctfkongress.event.activities.item3')}
                     </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-ctf-teal rounded-full mr-2"></span>
-                      {t('ctfkongress.event.activities.item4')}
-                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -167,15 +163,7 @@ const CTFKongress = () => {
               </AccordionItem>
             </Accordion>
             
-            <div className="text-center">
-              <p className="text-gray-600 mb-4">
-                {t('ctfkongress.event.next_event')}
-              </p>
-              <div className="inline-block bg-ctf-teal text-white px-6 py-3 rounded-lg">
-                <Globe className="inline-block mr-2 h-5 w-5" />
-                <span className="font-semibold">{t('ctfkongress.event.location')}, {t('ctfkongress.event.date')}</span>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>

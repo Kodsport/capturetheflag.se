@@ -49,16 +49,16 @@
   },
   "ctfkongress": {
     "title": "CTF-Kongress",
-    "subtitle": "Sveriges största nätverk för Capture The Flag-enthusiaster",
+    "subtitle": "Sveriges nätverk för Capture The Flag-entusiaster",
     "network": {
       "title": "Om nätverket",
       "description": "CTF-Kongress är ett nätverk som samlar individer, lag och organisationer med intresse för Capture The Flag (CTF) i Sverige. Vi fungerar som en plattform för kunskapsdelning, samarbete och utveckling inom cybersäkerhetsområdet med fokus på CTF-tävlingsformen.",
       "membership": "Med över 200 medlemmar från hela landet representerar vi ett brett spektrum av kunskap och erfarenhet inom cybersäkerhet.",
       "goals": {
         "title": "Våra mål",
-        "item1": "Att främja kunskapsutbyte mellan CTF-spelare och lag i Sverige",
-        "item2": "Att hjälpa till att arrangera och förbättra CTF-tävlingar i Sverige",
-        "item3": "Att representera Sverige internationellt inom CTF-communityt"
+        "item1": "Att samla CTF-Sverige och främja möten inom scenen",
+        "item2": "Att främja kunskapsutbyte mellan CTF-spelare och -lag i Sverige",
+        "item3": "Att främja CTF som tävlingsform"
       },
       "stats": {
         "title": "Nätverket i siffror",
@@ -68,36 +68,32 @@
       }
     },
     "event": {
-      "title": "Årliga evenemanget",
-      "description": "Varje år anordnar vi evenemanget CTF-Kongress där medlemmar från hela landet samlas för att dela kunskap, lära känna varandra och diskutera utvecklingen av CTF-scenen i Sverige. Detta evenemang har blivit en viktig mötesplats för att stärka gemenskapen och hitta nya samarbeten.",
+      "title": "Årliga CTF-BBQ",
+      "description": "Varje år anordnar vi en BBQ för CTF-Kongress där medlemmar från hela landet samlas för att dela kunskap, lära känna varandra och diskutera utvecklingen av CTF-scenen i Sverige.",
       "details": {
         "title": "Evenemangsdetaljer",
         "frequency": "Frekvens",
-        "frequency_value": "Årligen (september/oktober)",
+        "frequency_value": "Årligen (runt maj/juni)",
         "duration": "Längd",
-        "duration_value": "2-3 dagar",
+        "duration_value": "En eftermiddag",
         "location": "Plats",
-        "location_value": "Roterar mellan olika städer i Sverige"
+        "location_value": "Stockholm, plats anges till gäster privat"
       },
       "activities": {
         "title": "Aktiviteter",
-        "item1": "Workshops om CTF-teknik och strategier",
-        "item2": "Paneldiskussioner om cybersäkerhet",
-        "item3": "Mini-CTF tävlingar på plats",
-        "item4": "Nätverkande och sociala aktiviteter"
+        "item1": "Grill i vårsolen",
+        "item2": "Utnämningar för goda insatser för CTF-scenen",
+        "item3": "Nätverkande och sociala aktiviteter"
       },
       "faq": {
         "title": "Vanliga frågor",
         "q1": "Vem kan delta i CTF-Kongress?",
-        "a1": "Alla som är medlemmar i nätverket är välkomna att delta. För att bli medlem behöver du bara registrera dig på vår webbplats eller Discord.",
+        "a1": "Alla som är medlemmar i nätverket är välkomna att delta. För att bli medlem behöver du vara kopplad till något CTF-lag/-org samt ha referens från befintlig medlem som kan gå i god för dig.",
         "q2": "Kostar det något att delta?",
-        "a2": "Det finns en mindre deltagaravgift som täcker mat och lokaler under evenemanget. Exakt kostnad varierar från år till år.",
+        "a2": "Självkostnadspris för grill och öl! Man kan BYOB med fördel",
         "q3": "Hur kan jag hjälpa till med att organisera evenemanget?",
         "a3": "Vi söker alltid frivilliga! Kontakta oss via e-post eller Discord om du vill hjälpa till."
-      },
-      "next_event": "Nästa evenemang:",
-      "location": "Stockholm",
-      "date": "Oktober 2025"
+      }
     }
   },
   "contact": {
