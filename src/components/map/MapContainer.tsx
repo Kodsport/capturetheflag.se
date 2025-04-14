@@ -25,3 +25,4 @@ const MapContainer: React.FC<MapContainerProps> = ({ teams, competitions = [] })
 };
 
 export default MapContainer;
+

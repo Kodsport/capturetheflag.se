@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
@@ -8,7 +7,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import MapTabs from './MapTabs';
 import TeamPopup from './TeamPopup';
 import CompetitionPopup from './CompetitionPopup';
-import MapTokenInput from './MapTokenInput';
 
 interface MapDisplayProps {
   mapContainerRef: React.RefObject<HTMLDivElement>;
@@ -22,14 +20,16 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
   competitions
 }) => {
   const map = useRef<mapboxgl.Map | null>(null);
-  const [mapboxToken, setMapboxToken] = useState<string>('pk.eyJ1IjoidmluZ3IiLCJhIjoiY205NDh1eXg2MHB4bjJrczVhcmFqNWFzNCJ9.vp1jVLNUV-kVmeHbKzTEug');
   const [activeTeam, setActiveTeam] = useState<TeamItem | null>(null);
   const [activeCompetition, setActiveCompetition] = useState<CompetitionItem | null>(null);
   const [activeTab, setActiveTab] = useState<string>('teams');
   const markersRef = useRef<{ [id: string]: mapboxgl.Marker }>({});
 
+  // Hardcoded Mapbox token
+  const mapboxToken = 'pk.eyJ1IjoidmluZ3IiLCJhIjoiY205NDh1eXg2MHB4bjJrczVhcmFqNWFzNCJ9.vp1jVLNUV-kVmeHbKzTEug';
+
   useEffect(() => {
-    if (!mapContainerRef.current || !mapboxToken || map.current) return;
+    if (!mapContainerRef.current || map.current) return;
 
     // Initialize map
     mapboxgl.accessToken = mapboxToken;
@@ -56,7 +56,7 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
       map.current?.remove();
       map.current = null;
     };
-  }, [mapboxToken]);
+  }, []);
 
   const addMarkers = () => {
     if (!map.current) return;
@@ -142,7 +142,6 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
     });
   };
 
-  // Handle tab change to show/hide markers
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
     setActiveTeam(null);
@@ -162,32 +161,12 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
     }
   };
 
-  // Update markers if teams or competitions change
   useEffect(() => {
-    if (map.current && mapboxToken) {
+    if (map.current) {
       addMarkers();
       handleTabChange(activeTab);
     }
-  }, [teams, competitions, mapboxToken]);
-
-  // Check for stored token on component mount
-  useEffect(() => {
-    const storedToken = localStorage.getItem('mapboxToken');
-    if (storedToken) {
-      setMapboxToken(storedToken);
-    }
-  }, []);
-
-  if (!mapboxToken) {
-    return (
-      <MapTokenInput 
-        onTokenSubmit={(token) => {
-          setMapboxToken(token);
-          localStorage.setItem('mapboxToken', token);
-        }} 
-      />
-    );
-  }
+  }, [teams, competitions]);
 
   return (
     <div className="relative">
