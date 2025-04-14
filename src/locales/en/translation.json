@@ -1,3 +1,4 @@
+
 {
   "common": {
     "home": "Home",
@@ -7,9 +8,7 @@
     "ctfkongress": "CTF-Kongress",
     "contact": "Contact",
     "join": "Join CTF-Kongress",
-    "read_more": "Read more",
-    "coming_soon": "Coming Soon",
-    "content_in_progress": "We're working on preparing this content. Stay tuned!"
+    "read_more": "Read more"
   },
   "homepage": {
     "hero": {
@@ -88,7 +87,7 @@
         "title": "Join our Discord",
         "description": "Connect with CTF enthusiasts from all over Sweden in our Discord server.",
         "requirements_title": "Membership requirements",
-        "requirements_desc": "To join, you need to be active in the Swedish CTF scene and have a reference from an existing member who can vouch for you.",
+        "requirements_desc": "To join, you need to be active in the Swedish CTF scene and have a reference from an existing member.",
         "discord_title": "About our Discord server",
         "discord_desc": "Our Discord server is a gathering place for CTF players and organizers in Sweden.",
         "button": "Join CTF-Kongress"

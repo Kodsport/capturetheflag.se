@@ -1,3 +1,4 @@
+
 {
   "common": {
     "home": "Hem",
@@ -7,9 +8,7 @@
     "ctfkongress": "CTF-Kongress",
     "contact": "Kontakt",
     "join": "Gå med i CTF-Kongress",
-    "read_more": "Läs mer",
-    "coming_soon": "Kommer snart",
-    "content_in_progress": "Vi arbetar med att förbereda detta innehåll. Håll utkik!"
+    "read_more": "Läs mer"
   },
   "homepage": {
     "hero": {

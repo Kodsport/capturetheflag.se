@@ -4,13 +4,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Flag, Globe, Lock, Shield, Terminal } from "lucide-react";
-import { useTranslation } from 'react-i18next';
 
 const WhatIsCTF = () => {
-  const { t } = useTranslation();
-
   return (
-    <div className="flex flex-col min-h-screen relative">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       
       {/* Header */}
