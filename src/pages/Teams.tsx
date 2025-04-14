@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Button } from "@/components/ui/button";
@@ -66,10 +65,23 @@ const Teams = () => {
               {competitions.map(competition => (
                 <Card key={competition.id} className="overflow-hidden hover:shadow-lg transition-shadow border-t-2 border-red-500">
                   <CardHeader>
-                    <CardTitle>{competition.name}</CardTitle>
-                    <CardDescription>
-                      {[competition.city, competition.country].filter(a => !!a).join(', ')}
-                    </CardDescription>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <CardTitle>{competition.name}</CardTitle>
+                        <CardDescription>
+                          {[competition.city, competition.country].filter(a => !!a).join(', ')}
+                        </CardDescription>
+                      </div>
+                      {competition.logo && (
+                        <div className="flex-shrink-0">
+                          <img 
+                            src={competition.logo} 
+                            alt={`${competition.name} logo`}
+                            className="h-10 w-auto object-contain"
+                          />
+                        </div>
+                      )}
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">{competition.description || t('teams.competition.default_description')}</p>
@@ -109,10 +121,23 @@ const Teams = () => {
               {teams.map(team => (
                 <Card key={team.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle>{team.name}</CardTitle>
-                    <CardDescription>
-                      {[team.city, team.country].filter(a => !!a).join(', ')}
-                    </CardDescription>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <CardTitle>{team.name}</CardTitle>
+                        <CardDescription>
+                          {[team.city, team.country].filter(a => !!a).join(', ')}
+                        </CardDescription>
+                      </div>
+                      {team.logo && (
+                        <div className="flex-shrink-0">
+                          <img 
+                            src={team.logo} 
+                            alt={`${team.name} logo`}
+                            className="h-10 w-auto object-contain"
+                          />
+                        </div>
+                      )}
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">{team.description || t('teams.team.default_description')}</p>

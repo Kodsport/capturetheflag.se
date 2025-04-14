@@ -13,6 +13,7 @@ export interface TeamItem {
   website?: string;
   description?: string;
   achievements: string[];
+  logo?: string;
 }
 
 export const teamsData: TeamItem[] = [
@@ -27,7 +28,8 @@ export const teamsData: TeamItem[] = [
     achievements: [
       "1st Undutmaningen 2025, 2024, 2023",
       "1st Crate-CTF 2024, 2022",
-    ]
+    ],
+    logo: "/team-logos/royal-roppers.svg"
   },
   {
     id: 2,
@@ -39,7 +41,8 @@ export const teamsData: TeamItem[] = [
     description: "Svenska hackinglandslaget tävlar i ECSC",
     achievements: [
       "6th European Cybersecurity Championship 2022",
-    ]
+    ],
+    logo: "/team-logos/snht.svg"
   },
   {
     id: 3,
@@ -51,7 +54,8 @@ export const teamsData: TeamItem[] = [
     description: "A Chalmers + Göteborgs Universitet team",
     achievements: [
       "???"
-    ]
+    ],
+    logo: "/team-logos/chagu.svg"
   },
   {
     id: 4,
@@ -63,6 +67,7 @@ export const teamsData: TeamItem[] = [
     website: "https://kebab.team/",
     achievements: [
       "???"
-    ]
+    ],
+    logo: "/team-logos/kebab.svg"
   }
 ];

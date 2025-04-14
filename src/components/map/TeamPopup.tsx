@@ -22,6 +22,17 @@ const TeamPopup: React.FC<TeamPopupProps> = ({ team, onClose }) => {
           ✕
         </button>
       </div>
+      
+      {team.logo ? (
+        <div className="mt-2 mb-3 flex justify-center">
+          <img 
+            src={team.logo} 
+            alt={`${team.name} logo`} 
+            className="h-16 w-auto object-contain"
+          />
+        </div>
+      ) : null}
+      
       <p className="text-sm text-gray-600 mt-1">
         {[team.city, team.country].filter(a => !!a).join(', ')}
       </p>

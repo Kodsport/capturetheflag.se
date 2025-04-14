@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
@@ -58,6 +59,36 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
     };
   }, []);
 
+  const createMarkerElement = (type: 'team' | 'competition', item: TeamItem | CompetitionItem) => {
+    // Create container
+    const el = document.createElement('div');
+    el.className = `${type}-marker`;
+    el.style.cursor = 'pointer';
+    
+    // If item has a logo, use it
+    if (item.logo) {
+      el.style.width = '30px';
+      el.style.height = '30px';
+      el.style.borderRadius = '50%';
+      el.style.backgroundColor = type === 'team' ? '#1A3A6E' : '#ea384c';
+      el.style.border = '2px solid white';
+      el.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+      el.style.backgroundImage = `url(${item.logo})`;
+      el.style.backgroundSize = 'cover';
+      el.style.backgroundPosition = 'center';
+    } else {
+      // Fallback to colored circle
+      el.style.width = '20px';
+      el.style.height = '20px';
+      el.style.borderRadius = '50%';
+      el.style.backgroundColor = type === 'team' ? '#1A3A6E' : '#ea384c';
+      el.style.border = '2px solid white';
+      el.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+    }
+    
+    return el;
+  };
+
   const addMarkers = () => {
     if (!map.current) return;
 
@@ -69,16 +100,8 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
     teams.forEach(team => {
       if (!map.current) return;
 
-      // Create custom marker element
-      const el = document.createElement('div');
-      el.className = 'team-marker';
-      el.style.backgroundColor = '#1A3A6E';
-      el.style.width = '20px';
-      el.style.height = '20px';
-      el.style.borderRadius = '50%';
-      el.style.border = '2px solid white';
-      el.style.cursor = 'pointer';
-      el.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+      // Create marker element
+      const el = createMarkerElement('team', team);
 
       // Create and add marker
       const marker = new mapboxgl.Marker(el)
@@ -107,16 +130,8 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
     competitions.forEach(competition => {
       if (!map.current) return;
 
-      // Create custom marker element
-      const el = document.createElement('div');
-      el.className = 'competition-marker';
-      el.style.backgroundColor = '#ea384c'; // Red color for competitions
-      el.style.width = '20px';
-      el.style.height = '20px';
-      el.style.borderRadius = '50%';
-      el.style.border = '2px solid white';
-      el.style.cursor = 'pointer';
-      el.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+      // Create marker element
+      const el = createMarkerElement('competition', competition);
 
       // Create and add marker
       const marker = new mapboxgl.Marker(el)

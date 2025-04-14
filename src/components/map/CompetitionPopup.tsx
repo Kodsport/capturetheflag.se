@@ -22,6 +22,17 @@ const CompetitionPopup: React.FC<CompetitionPopupProps> = ({ competition, onClos
           ✕
         </button>
       </div>
+      
+      {competition.logo ? (
+        <div className="mt-2 mb-3 flex justify-center">
+          <img 
+            src={competition.logo} 
+            alt={`${competition.name} logo`} 
+            className="h-16 w-auto object-contain"
+          />
+        </div>
+      ) : null}
+      
       <p className="text-sm text-gray-600 mt-1">
         {[competition.city, competition.country].filter(a => !!a).join(', ')}
       </p>

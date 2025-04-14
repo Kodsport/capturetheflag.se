@@ -42,7 +42,7 @@ const Index = () => {
                 {t('homepage.hero.join_button')}
               </Button>
               </Link>
-              <Link to="/what-is-ctf">
+              <Link to="/teams">
               <Button variant="outline" className="text-black border-white hover:bg-white/80 hover:text-black/90">
                 {t('homepage.hero.discover_scene')}
               </Button>

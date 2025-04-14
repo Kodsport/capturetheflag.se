@@ -13,6 +13,7 @@ export interface CompetitionItem {
   website?: string;
   description?: string;
   format?: string;
+  logo?: string;
 }
 
 export const competitionsData: CompetitionItem[] = [
@@ -24,7 +25,8 @@ export const competitionsData: CompetitionItem[] = [
     country: "Sverige",
     website: "https://sakerhetssm.se",
     description: "Årlig CTF för gymnasiet, final i Stockholm",
-    format: "Jeopardy"
+    format: "Jeopardy",
+    logo: "/competition-logos/sakerhetssm.svg"
   },
   {
     id: 2,
@@ -34,7 +36,8 @@ export const competitionsData: CompetitionItem[] = [
     country: "",
     website: "https://www.foi.se/crate-ctf",
     description: "Årlig CTF från Totalförsvarets forskningsinstitut",
-    format: "Jeopardy"
+    format: "Jeopardy",
+    logo: "/competition-logos/crate.svg"
   },
   {
     id: 3,
@@ -44,7 +47,8 @@ export const competitionsData: CompetitionItem[] = [
     country: "",
     website: "https://undutmaning.se",
     description: "Årlig CTF från SÄPO, MUST och FRA",
-    format: "Jeopardy"
+    format: "Jeopardy",
+    logo: "/competition-logos/undu.svg"
   },
   {
     id: 4,
@@ -54,7 +58,8 @@ export const competitionsData: CompetitionItem[] = [
     country: "",
     description: "Qualifier for the SNHT team",
     format: "Jeopardy",
-    website: "https://snht.se/"
+    website: "https://snht.se/",
+    logo: "/competition-logos/scc.svg"
   },
   {
     id: 5,
@@ -64,6 +69,7 @@ export const competitionsData: CompetitionItem[] = [
     country: "",
     description: "CTF organized by the Swedish Computer Emergency Response Team",
     website: "https://www.cert.se/2024/09/cert-se-ctf2024.html",
-    format: "Jeopardy"
+    format: "Jeopardy",
+    logo: "/competition-logos/cert-se.svg"
   }
 ];
