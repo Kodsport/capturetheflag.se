@@ -41,7 +41,7 @@ const TeamPopup: React.FC<TeamPopupProps> = ({ team, onClose }) => {
         )}
         {team.achievements && team.achievements.length > 0 && (
           <div className="mt-2">
-            <span className="text-sm font-medium">Notable achievements:</span>
+            <span className="text-sm font-medium">{t('achievements.notable')}:</span>
             <ul className="text-xs mt-1 list-disc list-inside">
               {team.achievements.slice(0, 2).map((achievement, index) => (
                 <li key={index}>{achievement}</li>

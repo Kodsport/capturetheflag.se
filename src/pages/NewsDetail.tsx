@@ -34,7 +34,7 @@ const NewsDetail = () => {
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="container mx-auto px-4 py-16 flex-grow">
-          <h1 className="text-2xl font-bold">Artikel kunde inte hittas</h1>
+          <h1 className="text-2xl font-bold">{t('newsdetail.not_found')}</h1>
           <Link to="/">
             <Button className="mt-4" variant="outline">
               <ChevronLeft className="mr-2 h-4 w-4" />

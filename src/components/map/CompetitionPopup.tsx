@@ -26,7 +26,7 @@ const CompetitionPopup: React.FC<CompetitionPopupProps> = ({ competition, onClos
         {[competition.city, competition.country].filter(a => !!a).join(', ')}
       </p>
       {competition.format && (
-        <p className="text-sm mt-1">Format: {competition.format}</p>
+        <p className="text-sm mt-1">{t('format')}: {competition.format}</p>
       )}
       <p className="text-sm mt-2">{competition.description}</p>
       {competition.website && (
@@ -37,7 +37,7 @@ const CompetitionPopup: React.FC<CompetitionPopupProps> = ({ competition, onClos
             rel="noopener noreferrer"
             className="text-sm text-ctf-teal hover:underline"
           >
-            {t("teams.team.visit_website")}
+            {t('teams.team.visit_website')}
           </a>
         </div>
       )}

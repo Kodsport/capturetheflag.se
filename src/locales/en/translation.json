@@ -138,6 +138,15 @@
   "footer": {
     "links": "Links",
     "contact": "Contact",
-    "copyright": "© {{year}} Kodsport Sverige. All rights reserved."
-  }
+    "copyright": "© {{year}} Kodsport Sverige. All rights reserved.",
+    "description": "CTF-Kongress is a network that promotes the Swedish CTF scene."
+  },
+  "newsdetail": {
+    "not_found": "Article could not be found"
+  },
+  "achievements": {
+    "notable": "Notable achievements"
+  },
+  "format": "Format",
+  "website_by": "This website was created and is maintained by"
 }

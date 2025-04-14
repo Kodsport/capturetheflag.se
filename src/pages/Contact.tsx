@@ -54,7 +54,7 @@ const Contact = () => {
                     </ul>
                   </CardContent>
                   <CardContent className="p-6">
-                    Hemsidan har skapats och drivs av <a className="text-ctf-teal" href="http://kodsport.se">Kodsport Sverige</a>.
+                    {t('website_by')} <a className="text-ctf-teal" href="http://kodsport.se">Kodsport Sverige</a>.
                   </CardContent>
                 </Card>
               </div>

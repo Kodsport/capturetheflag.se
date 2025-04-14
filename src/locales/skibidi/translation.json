@@ -1,4 +1,3 @@
-
 {
   "common": {
     "home": "Hemma 🏠 ZAMN! 💥",
@@ -55,5 +54,19 @@
         "a2": "CHEAP AF. BRING YOUR OWN BREW AND VIBE 🍻🚀"
       }
     }
-  }
+  },
+  "footer": {
+    "links": "SKIBIDI LINKS 🔗😵‍💫",
+    "contact": "HIT US UP FR FR 📲🤙",
+    "copyright": "© {{year}} KODSPORT GVNG ON TOP 💯💀",
+    "description": "CTF-KONGRESS BE BUSSIN FRFR NO CAP 🥶🔥"
+  },
+  "newsdetail": {
+    "not_found": "OOF ARTICLE GONE 404 MOMENT 💀🤡"
+  },
+  "achievements": {
+    "notable": "EPIC GAMER MOMENTS 🏆🎮"
+  },
+  "format": "VIBE CHECK 📊😎",
+  "website_by": "THIS SKIBIDI SITE BE CRANKED BY 🚶"
 }
