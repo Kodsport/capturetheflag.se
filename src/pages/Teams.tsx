@@ -88,25 +88,61 @@ const Teams = () => {
                 className="w-full"
               />
             </div>
-            <div className="w-full md:w-1/2">
-              <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab} value={activeTab}>
-                <TabsList className="grid grid-cols-3 w-full">
-                  <TabsTrigger value="all">{t('teams.filters.all')}</TabsTrigger>
-                  <TabsTrigger value="teams">{t('teams.filters.teams')}</TabsTrigger>
-                  <TabsTrigger value="competitions">{t('teams.filters.competitions')}</TabsTrigger>
-                </TabsList>
-              </Tabs>
-            </div>
           </div>
         </div>
       </section>
       
       {/* Teams and Competitions Listing */}
-      <section className="py-16">
+      <section className="py-8">
         <div className="container mx-auto px-4">
+          {/* Display Competitions */}
+          {filteredCompetitions.length > 0 && (
+            <div>
+              <h2 className="text-2xl font-bold  text-red-600 flex items-center">
+                <Flag className="mr-2 h-6 w-6" />
+                {t('teams.section_competitions')}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredCompetitions.map(competition => (
+                  <Card key={competition.id} className="overflow-hidden hover:shadow-lg transition-shadow border-t-2 border-red-500">
+                    <CardHeader>
+                      <CardTitle>{competition.name}</CardTitle>
+                      <CardDescription>
+                        {[competition.city, competition.country].filter(a => !!a).join(', ')}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 mb-4">{competition.description || t('teams.competition.default_description')}</p>
+                      
+                      {competition.format && (
+                        <div className="mt-2">
+                          <Badge variant="outline" className="mr-2">
+                            {competition.format}
+                          </Badge>
+                        </div>
+                      )}
+                    </CardContent>
+                    <CardFooter className="flex justify-between border-t pt-4">
+                      {competition.website && (
+                        <a 
+                          href={competition.website} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="flex items-center gap-2 text-red-600 hover:text-red-800 transition-colors"
+                        >
+                          {t('teams.team.visit_website')} <ExternalLink className="h-4 w-4" />
+                        </a>
+                      )}
+                    </CardFooter>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+          
           {/* Display Teams */}
           {filteredTeams.length > 0 && (
-            <div className="mb-12">
+            <div className="mt-12">
               <h2 className="text-2xl font-bold mb-6 text-ctf-blue flex items-center">
                 <Trophy className="mr-2 h-6 w-6" />
                 {t('teams.section_teams')}
@@ -152,50 +188,6 @@ const Teams = () => {
             </div>
           )}
           
-          {/* Display Competitions */}
-          {filteredCompetitions.length > 0 && (
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-red-600 flex items-center">
-                <Flag className="mr-2 h-6 w-6" />
-                {t('teams.section_competitions')}
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredCompetitions.map(competition => (
-                  <Card key={competition.id} className="overflow-hidden hover:shadow-lg transition-shadow border-t-2 border-red-500">
-                    <CardHeader>
-                      <CardTitle>{competition.name}</CardTitle>
-                      <CardDescription>
-                        {[competition.city, competition.country].filter(a => !!a).join(', ')}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-600 mb-4">{competition.description || t('teams.competition.default_description')}</p>
-                      
-                      {competition.format && (
-                        <div className="mt-2">
-                          <Badge variant="outline" className="mr-2">
-                            {competition.format}
-                          </Badge>
-                        </div>
-                      )}
-                    </CardContent>
-                    <CardFooter className="flex justify-between border-t pt-4">
-                      {competition.website && (
-                        <a 
-                          href={competition.website} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="flex items-center gap-2 text-red-600 hover:text-red-800 transition-colors"
-                        >
-                          {t('teams.team.visit_website')} <ExternalLink className="h-4 w-4" />
-                        </a>
-                      )}
-                    </CardFooter>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          )}
           
           {!hasResults && (
             <div className="text-center py-12">
