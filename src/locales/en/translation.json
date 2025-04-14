@@ -4,6 +4,7 @@
     "home": "Home",
     "whatIsCTF": "What is CTF?",
     "teams": "Teams and Competitions",
+    "ctfkongress": "CTF-Kongress",
     "contact": "Contact",
     "join": "Join CTF-Kongress",
     "read_more": "Read more"
@@ -44,6 +45,59 @@
       "title": "Is your team missing?",
       "description": "Are you in a team that's not on the list? Contact us to add your team!",
       "button": "Register your team"
+    }
+  },
+  "ctfkongress": {
+    "title": "CTF-Kongress",
+    "subtitle": "Sweden's largest network for Capture The Flag enthusiasts",
+    "network": {
+      "title": "About the network",
+      "description": "CTF-Kongress is a network that brings together individuals, teams, and organizations interested in Capture The Flag (CTF) in Sweden. We serve as a platform for knowledge sharing, collaboration, and development in the cybersecurity field with a focus on CTF competitions.",
+      "membership": "With over 200 members from across the country, we represent a broad spectrum of knowledge and experience in cybersecurity.",
+      "goals": {
+        "title": "Our goals",
+        "item1": "To promote knowledge exchange between CTF players and teams in Sweden",
+        "item2": "To help organize and improve CTF competitions in Sweden",
+        "item3": "To represent Sweden internationally within the CTF community"
+      },
+      "stats": {
+        "title": "Network statistics",
+        "teams": "Active teams",
+        "members": "Members",
+        "founded": "Founded"
+      }
+    },
+    "event": {
+      "title": "Annual event",
+      "description": "Each year, we organize the CTF-Kongress event where members from across the country gather to share knowledge, get to know each other, and discuss the development of the CTF scene in Sweden. This event has become an important meeting place for strengthening the community and finding new collaborations.",
+      "details": {
+        "title": "Event details",
+        "frequency": "Frequency",
+        "frequency_value": "Annually (September/October)",
+        "duration": "Duration",
+        "duration_value": "2-3 days",
+        "location": "Location",
+        "location_value": "Rotates between different cities in Sweden"
+      },
+      "activities": {
+        "title": "Activities",
+        "item1": "Workshops on CTF techniques and strategies",
+        "item2": "Panel discussions on cybersecurity",
+        "item3": "Mini-CTF competitions on site",
+        "item4": "Networking and social activities"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": "Who can participate in CTF-Kongress?",
+        "a1": "Anyone who is a member of the network is welcome to participate. To become a member, you just need to register on our website or Discord.",
+        "q2": "Is there a cost to participate?",
+        "a2": "There is a small participation fee that covers food and venues during the event. The exact cost varies from year to year.",
+        "q3": "How can I help organize the event?",
+        "a3": "We're always looking for volunteers! Contact us via email or Discord if you want to help out."
+      },
+      "next_event": "Next event:",
+      "location": "Stockholm",
+      "date": "October 2025"
     }
   },
   "contact": {

@@ -27,6 +27,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className="hover:text-ctf-teal transition-colors">{t('common.home')}</Link>
             <Link to="/what-is-ctf" className="hover:text-ctf-teal transition-colors">{t('common.whatIsCTF')}</Link>
+            <Link to="/ctf-kongress" className="hover:text-ctf-teal transition-colors">{t('common.ctfkongress')}</Link>
             <Link to="/teams" className="hover:text-ctf-teal transition-colors">{t('common.teams')}</Link>
             <Link to="/contact" className="hover:text-ctf-teal transition-colors">{t('common.contact')}</Link>
    
@@ -59,18 +60,25 @@ const Navbar = () => {
                 {t('common.home')}
               </Link>
               <Link 
-                to="/teams" 
-                className="hover:text-ctf-teal transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('common.teams')}
-              </Link>
-              <Link 
                 to="/what-is-ctf" 
                 className="hover:text-ctf-teal transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t('common.whatIsCTF')}
+              </Link>
+              <Link 
+                to="/ctf-kongress" 
+                className="hover:text-ctf-teal transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t('common.ctfkongress')}
+              </Link>
+              <Link 
+                to="/teams" 
+                className="hover:text-ctf-teal transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t('common.teams')}
               </Link>
               <Link 
                 to="/contact" 

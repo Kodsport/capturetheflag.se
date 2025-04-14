@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import NewsDetail from "./pages/NewsDetail";
 import WhatIsCTF from "./pages/WhatIsCTF";
+import CTFKongress from "./pages/CTFKongress";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/teams" element={<Teams />} />
           <Route path="/what-is-ctf" element={<WhatIsCTF />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/ctf-kongress" element={<CTFKongress />} />
           <Route path="/news/:id" element={<NewsDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
