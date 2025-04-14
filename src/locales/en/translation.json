@@ -39,10 +39,22 @@
     "title": "CTF teams and competitions in Sweden",
     "subtitle": "Discover active Capture the Flag teams and competitions around the country and see where they are located",
     "search": "Search for name or city...",
+    "filters": {
+      "all": "All",
+      "teams": "Teams",
+      "competitions": "Competitions"
+    },
+    "section_teams": "Teams",
+    "section_competitions": "Competitions",
     "team": {
       "achievements": "Achievements",
-      "visit_website": "Visit website"
+      "visit_website": "Visit website",
+      "default_description": "An active CTF team in Sweden."
     },
+    "competition": {
+      "default_description": "A CTF competition in Sweden." 
+    },
+    "no_results": "No results found with the search term",
     "no_teams": "No teams found with the search term",
     "clear_search": "Clear search",
     "missing_team": {
