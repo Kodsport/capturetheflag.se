@@ -39,12 +39,6 @@ const LanguageSwitcher = () => {
         >
           English
         </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => changeLanguage("skibidi")}
-          className={`cursor-pointer ${i18n.language === "skibidi" ? "font-bold" : ""}`}
-        >
-          Skibidi 🤯
-        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

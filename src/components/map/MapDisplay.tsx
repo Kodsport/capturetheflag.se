@@ -70,12 +70,13 @@ const MapDisplay: React.FC<MapDisplayProps> = ({
       el.style.width = '30px';
       el.style.height = '30px';
       el.style.borderRadius = '50%';
-      el.style.backgroundColor = type === 'team' ? '#1A3A6E' : '#ea384c';
+      el.style.backgroundColor = type === 'team' ? '#1A3A6E' : '#FFFFFF';
       el.style.border = '2px solid white';
       el.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
       el.style.backgroundImage = `url(${item.logo})`;
       el.style.backgroundSize = 'cover';
       el.style.backgroundPosition = 'center';
+      el.style.backgroundRepeat = 'no-repeat';
     } else {
       // Fallback to colored circle
       el.style.width = '20px';

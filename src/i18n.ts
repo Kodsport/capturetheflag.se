@@ -21,7 +21,7 @@ i18n
         translation: svTranslation,
       },
       skibidi: {
-        translation: skibidiTranslation,
+        translation: skibidiTranslation, // should not be able to be chosen by user
       }
     },
     fallbackLng: 'sv',
