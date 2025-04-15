@@ -115,8 +115,8 @@ const CTFKongress = () => {
                   <h3 className="text-lg font-semibold mb-4 text-ctf-blue">{t('ctfkongress.event.details.title')}</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <span className="font-medium w-24">{t('ctfkongress.event.details.frequency')}:</span>
-                      <span>{t('ctfkongress.event.details.frequency_value')}</span>
+                      <span className="font-medium w-24">{t('ctfkongress.event.details.date')}:</span>
+                      <span>{t('ctfkongress.event.details.date_value')}</span>
                     </div>
                     <div className="flex items-start">
                       <span className="font-medium w-24">{t('ctfkongress.event.details.duration')}:</span>

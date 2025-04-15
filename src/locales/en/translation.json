@@ -103,8 +103,8 @@
       "description": "Each year, we organize a BBQ for CTF-Kongress where members from across the country gather to share knowledge, get to know each other, and discuss the development of the CTF scene in Sweden.",
       "details": {
         "title": "Event details",
-        "frequency": "Frequency",
-        "frequency_value": "Annually (around May/June)",
+        "date": "Date",
+        "date_value": "24th June 2025",
         "duration": "Duration",
         "duration_value": "One afternoon",
         "location": "Location",
@@ -113,7 +113,7 @@
       "activities": {
         "title": "Activities",
         "item1": "Grilling in the spring sun",
-        "item2": "Awards for good contributions to the CTF scene",
+        "item2": "Awards for contributions to the CTF scene",
         "item3": "Networking and social activities"
       },
       "faq": {

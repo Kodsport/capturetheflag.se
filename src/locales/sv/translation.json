@@ -103,8 +103,8 @@
       "description": "Varje år anordnar vi en BBQ för CTF-Kongress där medlemmar från hela landet samlas för att dela kunskap, lära känna varandra och diskutera utvecklingen av CTF-scenen i Sverige.",
       "details": {
         "title": "Evenemangsdetaljer",
-        "frequency": "Frekvens",
-        "frequency_value": "Årligen (runt maj/juni)",
+        "date": "Datum",
+        "date_value": "24 maj 2025",
         "duration": "Längd",
         "duration_value": "En eftermiddag",
         "location": "Plats",
