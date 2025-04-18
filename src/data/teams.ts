@@ -77,5 +77,7 @@ export const teamsData: TeamItem[] = [
     location: { lat: 58.323236401890036, lng: 11.41149876911872 },
     description: "",
     achievements: [],
+    website: "https://shellskapsresan.se/",
+    logo: "/team-logos/shellskapsresan.png"
   }
 ];
