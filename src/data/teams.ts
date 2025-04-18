@@ -62,10 +62,20 @@ export const teamsData: TeamItem[] = [
     city: "Stockholm",
     country: "Sweden",
     location: { lat: 59.34498831576734, lng: 18.07384927552212 },
-    description: "Engieers that love kebab (and CTF)",
+    description: "Engineers that love kebab (and CTF)",
     website: "https://kebab.team/",
     achievements: [
+      "1st Crate-CTF 2023"
     ],
     logo: "/team-logos/kebab-favicon.ico"
+  },
+  {
+    id: 5,
+    name: "Shellskapsresan",
+    city: "Skalhamn",
+    country: "Sweden",
+    location: { lat: 58.323236401890036, lng: 11.41149876911872 },
+    description: "",
+    achievements: [],
   }
 ];
