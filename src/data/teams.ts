@@ -75,7 +75,7 @@ export const teamsData: TeamItem[] = [
     city: "Skalhamn",
     country: "Sweden",
     location: { lat: 58.323236401890036, lng: 11.41149876911872 },
-    description: "",
+    description: "An active CTF team composed of members ranging from absolute beginners to cybersecurity specialists, participating for both fun and learning",
     achievements: [],
     website: "https://shellskapsresan.se/",
     logo: "/team-logos/shellskapsresan.png"
