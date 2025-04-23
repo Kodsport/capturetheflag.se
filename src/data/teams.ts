@@ -93,5 +93,16 @@ export const teamsData: TeamItem[] = [
     country: "Sweden",
     website: "https://www.kauotic.se/",
     logo: "/team-logos/kauotic_logo.webp"
+  },
+  {
+    id: 7,
+    name: "BankarKodFörGifflar",
+    description: "inside of u there are two wolves...",
+    website: "https://giffla.re/",
+    location: { lat: 55.58617055893989, lng: 13.02252728546795 },
+    country: "Sweden",
+    city: "",
+    logo: "/team-logos/gifflar.png",
+    achievements: []
   }
 ];
