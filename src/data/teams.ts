@@ -79,5 +79,19 @@ export const teamsData: TeamItem[] = [
     achievements: [],
     website: "https://shellskapsresan.se/",
     logo: "/team-logos/shellskapsresan.png"
+  },
+  {
+    id: 6,
+    name: "KAUotic Hacking Club",
+    description: "A club at Karlstad University all about hacking, privacy and security",
+    location: { lat: 59.4041117, lng: 13.5812303 },
+    achievements: [
+      "HTB Cyber Apocalypse 2024: 112th of 5694",
+      "HTB Cyber Apocalypse 2025: 195th of 8130"
+    ],
+    city: "Karlstad",
+    country: "Sweden",
+    website: "https://www.kauotic.se/",
+    logo: "/team-logos/kauotic_logo.webp"
   }
 ];
