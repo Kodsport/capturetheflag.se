@@ -35,12 +35,13 @@ export const teamsData: TeamItem[] = [
     id: 2,
     name: "Swedish National Hacking Team",
     city: "",
-    location: { lat: 59.01796484774821, lng: 13.60163114615637 },
+    location: { lat: 62.193842953397805, lng: 15.051327439834726 },
     country: "Sweden",
     website: "https://snht.se",
     description: "Svenska hackinglandslaget representerar Sverige internationellt i ECSC och ICO",
     achievements: [
       "6th European Cybersecurity Championship 2022",
+      "11th European Cybersecurity Championship 2024",
     ],
     logo: "/team-logos/snht.png"
   },
@@ -103,6 +104,28 @@ export const teamsData: TeamItem[] = [
     country: "Sweden",
     city: "",
     logo: "/team-logos/gifflar.png",
+    achievements: []
+  },
+  {
+    id: 8,
+    name: "Flägermeisters",
+    description: "Competitive CTF Team from Lund University_",
+    website: "https://flägermeiste.rs/",
+    location: { lat: 55.71100487159305, lng: 13.210947499433571 },
+    country: "Sweden",
+    city: "Lund",
+    logo: "/team-logos/flagermeisters.webp",
+    achievements: []
+  },
+  {
+    id: 9,
+    name: "LiTHeHax",
+    description: "An ethical hacking/CTF  organization from Linköpings University (LiU)",
+    location: { lat: 58.40036550091464, lng: 15.578146295576643 },
+    city: "Linköping",
+    country: "Sweden",
+    logo: "/team-logos/lithehax.png",
+    website: "https://lithehax.se/",
     achievements: []
   }
 ];
