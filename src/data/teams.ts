@@ -127,5 +127,15 @@ export const teamsData: TeamItem[] = [
     logo: "/team-logos/lithehax.png",
     website: "https://lithehax.se/",
     achievements: []
+  },
+  {
+    id: 10,
+    name: "HjärterHex",
+    description: "A student-driven, interest-based association at Halmstad University, focused on cybersecurity and CTF competitions.",
+    location: { lat: 56.664809605533534, lng: 12.877978842327776},
+    city: "Halmstad",
+    country: "Sweden",
+    logo: "/team-logos/HjarterHex.svg",
+    achievements: [],
   }
 ];
