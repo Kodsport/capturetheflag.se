@@ -78,7 +78,7 @@ const Index = () => {
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <Link to={`/news/${featuredNews[0].id}`}>
                   <img 
-                    src={featuredNews[0].image} 
+                    src={featuredNews[0].image } 
                     alt={featuredNews[0].title}
                     className="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-300" 
                   />
