@@ -71,5 +71,16 @@ export const competitionsData: CompetitionItem[] = [
     website: "https://www.cert.se/2024/09/cert-se-ctf2024.html",
     format: "Jeopardy",
     logo: ""
+  },
+  {
+    id: 6,
+    name: "Midnight Sun CTF",
+    city: "Stockholm",
+    country: "",
+    website: "https://play.midnightsunctf.com/",
+    format: "Jeopardy",
+    logo: "/ctf-logos/favicon-mns.png",
+    description: "HackingForSoju bjuder på CTF!",
+    location: { lat: 59.3324242379726, lng: 18.05858283821012 }
   }
 ];
