@@ -15,8 +15,7 @@ const Index = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    // Set featured news (first article)
-    setFeaturedNews([newsData[0]]);
+    setFeaturedNews([newsData[newsData.length - 1]]);
     
     // Set recent news (remaining articles)
     setRecentNews(newsData.slice(1));
