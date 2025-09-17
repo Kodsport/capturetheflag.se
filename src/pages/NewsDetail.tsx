@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { newsData, NewsItem } from "@/data/news";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Helmet } from "react-helmet-async";
 import { 
   Breadcrumb,
   BreadcrumbItem,
@@ -55,36 +54,9 @@ const NewsDetail = () => {
   }).format(new Date(newsItem.date));
 
   const content = newsItem.content || newsItem.excerpt;
-  const currentUrl = `${window.location.origin}/news/${newsItem.id}`;
-  const imageUrl = newsItem.image.startsWith('http') ? newsItem.image : `${window.location.origin}${newsItem.image}`;
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet>
-        <title>{`${newsItem.title} | CTF-SE`}</title>
-        <meta name="description" content={newsItem.excerpt} />
-        
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={newsItem.title} />
-        <meta property="og:description" content={newsItem.excerpt} />
-        <meta property="og:image" content={imageUrl} />
-        <meta property="og:url" content={currentUrl} />
-        <meta property="og:site_name" content="CTF-SE" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={newsItem.title} />
-        <meta name="twitter:description" content={newsItem.excerpt} />
-        <meta name="twitter:image" content={imageUrl} />
-        
-        {/* Article specific */}
-        <meta property="article:published_time" content={newsItem.date} />
-        <meta property="article:section" content={newsItem.category} />
-        
-        {/* Canonical URL */}
-        <link rel="canonical" href={currentUrl} />
-      </Helmet>
       <Navbar />
       
       <div className="container mx-auto px-4 py-8 flex-grow">
