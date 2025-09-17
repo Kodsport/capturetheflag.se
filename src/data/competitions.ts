@@ -82,5 +82,16 @@ export const competitionsData: CompetitionItem[] = [
     logo: "/ctf-logos/favicon-mns.png",
     description: "HackingForSoju bjuder på CTF!",
     location: { lat: 59.3324242379726, lng: 18.05858283821012 }
+  },
+  {
+    id: 7,
+    name: "Sec-T CTF",
+    city: "Stockholm",
+    country: "",
+    location: { lat: 59.32061228927417, lng: 18.055865041753073 },
+    description: "CTF during the Sec-T Conference",
+    website: "https://ctf.sec-t.org/",
+    format: "Jeopardy",
+    logo: "/ctf-logos/sec-t.png"
   }
 ];

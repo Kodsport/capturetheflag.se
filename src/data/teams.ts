@@ -132,10 +132,20 @@ export const teamsData: TeamItem[] = [
     id: 10,
     name: "HjärterHex",
     description: "A student-driven, interest-based association at Halmstad University, focused on cybersecurity and CTF competitions.",
-    location: { lat: 56.664809605533534, lng: 12.877978842327776},
+    location: { lat: 56.664809605533534, lng: 12.877978842327776 },
     city: "Halmstad",
     country: "Sweden",
     logo: "/team-logos/HjarterHex.svg",
     achievements: [],
+  },
+  {
+    id: 11,
+    name: "MSAB",
+    description: "",
+    location: { lat: 59.316149784144095, lng: 18.03457864825989 },
+    city: "Stockholm",
+    country: "Sweden",
+    website: "https://www.msab.com/",
+    achievements: ["1st Sec-T CTF 2025"],
   }
 ];
