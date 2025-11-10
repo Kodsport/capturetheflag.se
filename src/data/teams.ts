@@ -147,5 +147,15 @@ export const teamsData: TeamItem[] = [
     country: "Sweden",
     website: "https://www.msab.com/",
     achievements: ["1st Sec-T CTF 2025"],
+  },
+  {
+    id: 12,
+    name: "Frostbyte",
+    description: "A Student-driven CTF Team based in Luleås Tekniska University",
+    location: { lat: 65.61792828073824, lng: 22.140113886894362 },
+    city: "Luleå",
+    country: "Sweden",
+    logo: "/team-logos/frostbyte.png",
+    achievements: [],
   }
 ];
